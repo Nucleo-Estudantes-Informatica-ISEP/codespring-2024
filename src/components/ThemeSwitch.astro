@@ -2,12 +2,13 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<button class="z-20 border p-2 rounded-lg" id="themeSwitch">
-  <Icon class="w-5 h-5" name="heroicons-outline:sun" />
+<button class="z-20 rounded-lg border p-2" id="themeSwitch">
+  <Icon class="h-5 w-5" name="heroicons-outline:sun" />
 </button>
 
 <script>
   import { config } from "../config";
+
   const button = document.getElementById("themeSwitch") as HTMLButtonElement;
   const theme = localStorage.getItem(config.localStorage.theme);
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -26,6 +27,6 @@ import { Icon } from "astro-icon/components";
   button.addEventListener("click", () => {
     console.log("click");
     const theme = localStorage.getItem(config.localStorage.theme);
-    updateTheme(theme === 'light' ? 'dark' : 'light');
+    updateTheme(theme === "light" ? "dark" : "light");
   });
 </script>
