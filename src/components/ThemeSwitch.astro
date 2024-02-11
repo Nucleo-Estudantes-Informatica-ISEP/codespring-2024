@@ -7,8 +7,9 @@ import { Icon } from "astro-icon/components";
 </button>
 
 <script>
+  import { config } from "../config";
   const button = document.getElementById("themeSwitch") as HTMLButtonElement;
-  const theme = localStorage.getItem("theme");
+  const theme = localStorage.getItem(config.localStorage.theme);
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
@@ -17,14 +18,14 @@ import { Icon } from "astro-icon/components";
     const theme = value === "system" ? systemTheme : value;
     document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(theme);
-    localStorage.setItem("theme", value);
+    localStorage.setItem(config.localStorage.theme, value);
   }
 
   updateTheme(theme || "system");
 
   button.addEventListener("click", () => {
     console.log("click");
-    const theme = localStorage.getItem("theme");
+    const theme = localStorage.getItem(config.localStorage.theme);
     updateTheme(theme === 'light' ? 'dark' : 'light');
   });
 </script>
