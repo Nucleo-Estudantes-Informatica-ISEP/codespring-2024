@@ -1,5 +1,5 @@
 {
-"endOfLine": "lf",
+  "endOfLine": "lf",
   "printWidth": 80,
   "semi": true,
   "singleQuote": false,
@@ -37,4 +37,3 @@
     "eslint-plugin-prettier"
   ]
 }
-

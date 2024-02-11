@@ -8,9 +8,9 @@ This is a Núcleo de Estudantes de Informática project, made by students from I
 
 ## Description
 
-CodeSpring, the premier tech event of the year, is launching its inaugural edition! 
+CodeSpring, the premier tech event of the year, is launching its inaugural edition!
 
-Join us for an exhilarating Hackathon experience that's not only a great networking opportunity but also a chance to put your skills to the test! 
+Join us for an exhilarating Hackathon experience that's not only a great networking opportunity but also a chance to put your skills to the test!
 
 The event will be held at ISEP (Instituto Superior de Engenharia do Porto) on the Xth and Yth of Z.
 

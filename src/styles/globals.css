@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :global(.dark) {
     color-scheme: dark;
@@ -13,22 +12,22 @@
   :root {
     --text: #000000;
     --background: #e5fcff;
-    --primary: #8FB2FF;
-    --secondary: #EBF1FF;
-    --accent: #mv ;
-    --muted: #3B3B3B;
+    --primary: #8fb2ff;
+    --secondary: #ebf1ff;
+    --accent: #mv;
+    --muted: #3b3b3b;
     --container: #ffffff;
     --hero-bg: url("/svg/hero-light.svg");
   }
-  
+
   .dark {
     --background: #181818;
     --text: #ffffff;
     --primary: #002470;
     --secondary: #000614;
-    --accent: #FF73AF;
-    --muted: #DEDEDE;
-    --container: #3B3B3B;
+    --accent: #ff73af;
+    --muted: #dedede;
+    --container: #3b3b3b;
     --hero-bg: url("/svg/hero-dark.svg");
   }
 
@@ -38,7 +37,7 @@
     color: var(--text);
     background-image: var(--hero-bg);
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
   h1,

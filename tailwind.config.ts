@@ -24,7 +24,7 @@ const config: Config = {
         archivo: ["Archivo", "Arial", "sans-serif"],
       },
       backgroundImage: {
-        hero: "var(--hero-bg)"
+        hero: "var(--hero-bg)",
       },
     },
   },
