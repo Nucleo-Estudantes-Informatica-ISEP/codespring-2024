@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.2.19",
     "astro": "^4.3.5",
     "astro-icon": "^1.1.0",
+    "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.3.3"
