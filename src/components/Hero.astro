@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon/components";
+import ThemeSwitch from './ThemeSwitch.astro';
+---
+
+<main>
+  <nav class="h-20 flex items-center w-full justify-between px-8">
+    <div class="flex items-center gap-x-4">
+      <div class="h-8 w-8 bg-slate-400 rounded-lg"></div>
+      <h2 class="text-xl">CodeSpring</h2>
+    </div>
+    <div class="flex items-center gap-x-4">
+      <a href="https://instagram.com/nei-isep" target="_blank" class="border p-2 rounded-lg">
+        <Icon title="Instagram NEI-ISEP" class="w-5 h-5" name="mdi:instagram" /> 
+      </a>      
+      <ThemeSwitch />
+    </div>
+  </nav>
+  <div class="grid grid-cols-[1fr,1fr] gap-8 p-8">
+    <h1 class="text-4xl">CodeSpring</h1>
+    <h2 class="text-8xl">Hackathon</h2>
+  </div>
+</main>

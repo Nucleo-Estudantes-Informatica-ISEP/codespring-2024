@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button class="z-20 border p-2 rounded-lg" id="themeSwitch">
+  <Icon class="w-5 h-5" name="heroicons-outline:sun" />
+</button>
+
+<script>
+  const button = document.getElementById("themeSwitch") as HTMLButtonElement;
+  const theme = localStorage.getItem("theme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+
+  function updateTheme(value: string) {
+    const theme = value === "system" ? systemTheme : value;
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
+    localStorage.setItem("theme", value);
+  }
+
+  updateTheme(theme || "system");
+
+  button.addEventListener("click", () => {
+    console.log("click");
+    const theme = localStorage.getItem("theme");
+    updateTheme(theme === 'light' ? 'dark' : 'light');
+  });
+</script>
