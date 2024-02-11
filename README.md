@@ -24,9 +24,6 @@ The event will be held at ISEP (Instituto Superior de Engenharia do Porto) on th
 
 1. Clone the repository
 2. Install dependencies with `pnpm i`
-3. Set up the environment variables `cp .env.example .env`
-4. Run `pnpm migrate` to apply the migrations.
-5. Generate the Prisma Client with `pnpm generate`
 
 ## Running locally
 
