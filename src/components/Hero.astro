@@ -4,7 +4,7 @@ import ThemeSwitch from './ThemeSwitch.astro';
 ---
 
 <main>
-  <nav class="h-20 flex items-center w-full justify-between px-8">
+  <nav class="h-[12vh] flex items-center w-full justify-between px-8">
     <div class="flex items-center gap-x-4">
       <div class="h-8 w-8 bg-slate-400 rounded-lg"></div>
       <h2 class="text-xl">CodeSpring</h2>
@@ -16,8 +16,18 @@ import ThemeSwitch from './ThemeSwitch.astro';
       <ThemeSwitch />
     </div>
   </nav>
-  <div class="grid grid-cols-[1fr,1fr] gap-8 p-8">
-    <h1 class="text-4xl">CodeSpring</h1>
-    <h2 class="text-8xl">Hackathon</h2>
+  <div class="flex items-center justify-center w-full h-[68vh] flex-col">
+    <div class="grid grid-cols-3 grid-rows-2 items-end justify-items-start">
+      <h1 class="text-7xl text-[72px] col-span-2">CodeSpring</h1>
+      <h2 class="text-3xl bg-container mb-1 px-4 py-2 rounded-lg">21-23 março</h2>
+      <h2 class="text-9xl text-[120px] row-span-1 col-span-3 font-bold text-accent">Hackathon</h2>
+    </div>
+    <div class="flex items-center justify-between gap-x-8">
+      <a class="bg-primary p-4 text-2xl font-bold rounded-lg" href="#">Inscreve-te gratuitamente</a>
+      <p class="font-archivo text-muted w-[320px] font-light leading-5">
+        Um evento destinado a todos os interessados em informática e programação.<br>
+        Vem provar as tuas habilidades ao longo de 2 dias intensos.
+      </p>
+    </div>
   </div>
 </main>
