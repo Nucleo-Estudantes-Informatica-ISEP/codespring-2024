@@ -18,6 +18,7 @@ The event will be held at ISEP (Instituto Superior de Engenharia do Porto) on th
 
 - [Astro](https://astro.build/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Getting Started
 
