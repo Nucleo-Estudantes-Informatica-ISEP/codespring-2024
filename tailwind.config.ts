@@ -4,7 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{astro,tsx}",
     "./src/components/**/*.{astro,tsx}",
-    "./src/layouts/**/*.{astro,tsx}",
+    "./src/layouts/**/*.{astro,tsx}"
   ],
   theme: {
     themeVariants: ["dark", "light"],
@@ -16,19 +16,19 @@ const config: Config = {
         secondary: "var(--secondary)",
         accent: "var(--accent)",
         muted: "var(--muted)",
-        container: "var(--container)",
+        container: "var(--container)"
       },
       fontFamily: {
         sans: ["Roboto", "Arial", "sans-serif"],
         poppins: ["Poppins", "Arial", "sans-serif"],
-        archivo: ["Archivo", "Arial", "sans-serif"],
+        archivo: ["Archivo", "Arial", "sans-serif"]
       },
       backgroundImage: {
-        hero: "var(--hero-bg)",
-      },
-    },
+        hero: "var(--hero-bg)"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
 
 export default config;

@@ -5,23 +5,31 @@ import Navbar from "./Navbar.astro";
 <main>
   <Navbar />
 
-  <div class="flex h-[68vh] w-full flex-col items-center justify-center">
+  <div class="flex h-[68vh] w-full flex-col items-center justify-center px-32">
     <div class="grid grid-cols-3 grid-rows-2 items-end justify-items-start">
-      <h1 class="col-span-2 text-[72px] leading-none">CodeSpring</h1>
-      <h2 class="mb-1 rounded-lg bg-container px-4 py-2 text-3xl">
+      <h1 class="col-span-2 text-4xl leading-none md:text-7xl">CodeSpring</h1>
+      <h2
+        class="mb-0 rounded-lg bg-container px-2 py-1 text-center text-lg md:mb-1 md:px-4 md:py-2 md:text-3xl"
+      >
         21-23 março
       </h2>
       <h2
-        class="col-span-3 row-span-1 text-[120px] font-bold leading-none text-accent"
+        class="col-span-3 row-span-1 text-6xl font-bold leading-none text-accent md:text-[120px]"
       >
         Hackathon
       </h2>
     </div>
-    <div class="flex items-center justify-between gap-x-8">
-      <a class="rounded-lg bg-primary p-4 text-2xl font-bold" href="#"
-        >Inscreve-te gratuitamente</a
+    <div
+      class="grid w-full items-center justify-items-center md:w-fit"
+      id="hero-line"
+    >
+      <a
+        class="flex w-full items-center justify-center rounded-lg bg-primary p-3 text-center text-lg font-bold md:w-fit md:p-4 md:text-2xl"
+        href="#">Inscreve-te gratuitamente</a
       >
-      <p class="w-[320px] font-archivo font-light leading-5 text-muted">
+      <p
+        class="w-full max-w-[320px] text-center font-archivo font-light leading-5 text-muted md:text-left"
+      >
         Um evento destinado a todos os interessados em informática e
         programação.<br />
         Vem provar as tuas habilidades ao longo de 2 dias intensos.
@@ -29,3 +37,31 @@ import Navbar from "./Navbar.astro";
     </div>
   </div>
 </main>
+
+<style>
+  #hero-line {
+    grid-template-areas: "button text";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 0 2rem;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    #hero-line {
+      grid-template-areas: "text" "button";
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      gap: 1rem 0;
+      margin-top: 2rem;
+    }
+  }
+
+  #hero-line a {
+    grid-area: button;
+  }
+
+  #hero-line p {
+    grid-area: text;
+  }
+</style>
