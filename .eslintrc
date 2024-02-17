@@ -5,6 +5,7 @@
   },
   "parser": "@typescript-eslint/parser",
   "plugins": [
+    "prettier-plugin-astro",
     "@typescript-eslint",
     "prettier",
     "eslint-plugin-import-helpers",
@@ -20,7 +21,6 @@
     "prettier/prettier": "warn",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-empty-function": "off",
-    "react-hooks/rules-of-hooks": "warn",
     "tailwindcss/classnames-order": "warn"
   },
   "overrides": [
