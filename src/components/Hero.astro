@@ -1,34 +1,18 @@
 ---
-import ThemeSwitch from "./ThemeSwitch.astro";
-
-import { Icon } from "astro-icon/components";
+import Navbar from "./Navbar.astro";
 ---
 
 <main>
-  <nav class="flex h-[12vh] w-full items-center justify-between px-8">
-    <div class="flex items-center gap-x-4">
-      <div class="h-8 w-8 rounded-lg bg-slate-400"></div>
-      <h2 class="text-xl">CodeSpring</h2>
-    </div>
-    <div class="flex items-center gap-x-4">
-      <a
-        href="https://instagram.com/nei-isep"
-        target="_blank"
-        class="rounded-lg border p-2"
-      >
-        <Icon title="Instagram NEI-ISEP" class="h-5 w-5" name="mdi:instagram" />
-      </a>
-      <ThemeSwitch />
-    </div>
-  </nav>
+  <Navbar />
+
   <div class="flex h-[68vh] w-full flex-col items-center justify-center">
     <div class="grid grid-cols-3 grid-rows-2 items-end justify-items-start">
-      <h1 class="col-span-2 text-7xl text-[72px]">CodeSpring</h1>
+      <h1 class="col-span-2 text-[72px] leading-none">CodeSpring</h1>
       <h2 class="mb-1 rounded-lg bg-container px-4 py-2 text-3xl">
         21-23 março
       </h2>
       <h2
-        class="col-span-3 row-span-1 text-9xl text-[120px] font-bold text-accent"
+        class="col-span-3 row-span-1 text-[120px] font-bold leading-none text-accent"
       >
         Hackathon
       </h2>
