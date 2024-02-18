@@ -1,5 +1,7 @@
 ---
+import Faq from "../components/faq/Faq.astro";
 import Hero from "../components/Hero.astro";
+import Content from "../layouts/Content.astro";
 import Layout from "../layouts/Layout.astro";
 
 import "../styles/globals.css";
@@ -7,4 +9,7 @@ import "../styles/globals.css";
 
 <Layout title="CodeSpring 2023">
   <Hero />
+  <Content>
+    <Faq />
+  </Content>
 </Layout>
