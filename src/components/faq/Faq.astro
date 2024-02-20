@@ -1,12 +1,12 @@
 ---
 import Title from "../Title.astro";
-import Question from "./Question";
+import QuestionsContainer from "./QuestionsContainer";
 ---
 
-<section>
+<>
   <Title>FAQ</Title>
 
-  <section>
-    <Question client:only />
+  <section class="mx-auto w-full max-w-[680px] px-8">
+    <QuestionsContainer client:load />
   </section>
-</section>
+</>
