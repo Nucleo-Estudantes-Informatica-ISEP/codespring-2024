@@ -1,0 +1,12 @@
+---
+import Title from "../Title.astro";
+import ScheduleContainer from "./ScheduleContainer";
+---
+
+<>
+  <Title>Schedule</Title>
+
+  <section class="mx-auto w-full max-w-[680px] px-8">
+    <ScheduleContainer client:load />
+  </section>
+</>
