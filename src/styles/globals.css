@@ -46,7 +46,7 @@
     --container: #ffffff;
     --hero-bg: url("/svg/hero-light.svg");
     --section-card: #ebf1ff;
-    --schedule-day: #D3D3D3;
+    --schedule-day: #a3a3a3;
 
     scroll-behavior: smooth;
   }
