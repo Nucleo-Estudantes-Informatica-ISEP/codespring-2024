@@ -12,7 +12,7 @@ CodeSpring, the premier tech event of the year, is launching its inaugural editi
 
 Join us for an exhilarating Hackathon experience that's not only a great networking opportunity but also a chance to put your skills to the test!
 
-The event will be held at ISEP (Instituto Superior de Engenharia do Porto) on the Xth and Yth of Z.
+The event will be held at ISEP (Instituto Superior de Engenharia do Porto) on the 12th up to 14th of April.
 
 ## Tech stack
 
