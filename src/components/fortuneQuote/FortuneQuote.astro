@@ -1,0 +1,14 @@
+---
+import Navbar from "../navbar/Navbar.astro";
+import FortuneQuotes from "./FortuneQuotes";
+---
+
+<main class="min-h-[100vh]">
+  <Navbar />
+
+  <div class="flex h-[68vh] w-full flex-col items-center justify-center">
+    <div class="grid w-full items-center justify-items-center md:w-fit">
+      <FortuneQuotes client:load />
+    </div>
+  </div>
+</main>
