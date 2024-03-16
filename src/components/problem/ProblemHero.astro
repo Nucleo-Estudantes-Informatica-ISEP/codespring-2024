@@ -1,0 +1,21 @@
+---
+import Navbar from "../navbar/Navbar.astro";
+import Highlight from "../problem/Highlight";
+---
+
+<main class="min-h-[100vh]">
+  <Navbar />
+
+  <div class="flex h-[68vh] w-full flex-col items-center justify-center">
+    <div class="grid w-full items-center justify-items-center md:w-fit">
+      <h2 class="text-3xl leading-none md:text-[34px]">
+        "The only way to do <Highlight color="primary" tilt="left"
+          >great work</Highlight
+        > is to love what you do. <br />
+        <br /> And occasionally <Highlight color="accent" tilt="right">
+          reboot your system.
+        </Highlight>"
+      </h2>
+    </div>
+  </div>
+</main>
