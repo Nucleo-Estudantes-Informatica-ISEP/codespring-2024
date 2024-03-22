@@ -3,15 +3,13 @@ import Title from "../Title.astro";
 import ScheduleContainer from "./ScheduleContainer";
 ---
 
-<>
-  <section class="mx-auto md:ml-8 lg:ml-16 2xl:ml-32 w-full md:max-w-[768px] lg:max-w-[1024px] 2xl:max-w-[1440px] pr-2 pb-24">
-    <h2 class="w-full text-left text-4xl font-bold md:text-6xl">
-      3 DIAS <br /> HACKATHON
-    </h2>
-    <p class="max-w-[1080px] text-left text-xl font-extralight pt-2 pb-12">
-      Ouviste bem! Ao longo de 3 dias vais poder experenciar o ambiente intenso
-      de desenvolvimento de uma hackathon para poderes competir por prémios
-    </p>
-    <ScheduleContainer client:load />
-  </section>
-</>
+<section class="mx-auto w-full pb-16 md:max-w-[1024px]">
+  <h3 class="w-full text-left text-4xl font-bold md:text-6xl">
+    3 DIAS <br /> HACKATHON
+  </h3>
+  <p class="max-w-[1080px] pb-12 pt-2 text-left text-xl font-light">
+    Ouviste bem! Ao longo de 3 dias vais poder experenciar o ambiente intenso de
+    desenvolvimento de uma hackathon para poderes competir por prémios
+  </p>
+  <ScheduleContainer client:load />
+</section>
