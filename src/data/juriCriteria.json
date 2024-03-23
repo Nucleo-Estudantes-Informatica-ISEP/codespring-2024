@@ -1,11 +1,23 @@
 [
     {
-      "description": "AAAAAAAAAAAA",
+      "description": "Impacto e relevância",
+      "value": 25
+    },
+    {
+      "description": "Apresentação e pitch",
+      "value": 15
+    },
+    {
+      "description": "Potencial de escalabilidade e sustentabilidade",
       "value": 10
     },
     {
-      "description": "BBBBBBBB CCCCCCCCCCCCCCC DDDDDDDDDDDD",
+      "description": "Relação com o tema",
       "value": 20
+    },
+    {
+      "description": "Complexidade",
+      "value": 30
     }
   ]
   
