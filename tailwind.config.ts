@@ -54,7 +54,15 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
-        }
+        },
+        sectionCard: {
+          DEFAULT: "var(--section-card)",
+          foreground: "hsl(var(--section-card-foreground))"
+        },
+        scheduleDay: {
+          DEFAULT: "var(--schedule-day)",
+          foreground: "hsl(var(--schedule-day-foreground))"
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

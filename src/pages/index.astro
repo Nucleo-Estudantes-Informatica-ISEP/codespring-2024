@@ -1,13 +1,21 @@
 ---
-import Footer from "../components/Footer.astro";
-import Hero from "../components/Hero.astro";
-import Layout from "../layouts/Layout.astro";
+import Faq from "@/components/faq/Faq.astro";
+import Footer from "@/components/Footer.astro";
+import Hero from "@/components/Hero.astro";
+import Schedule from "@/components/schedule/Schedule.astro";
+import Layout from "@/layouts/Layout.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
+
+import Content from "@/layouts/Content.astro";
 ---
 
 <Layout title="CodeSpring 2024">
   <Hero />
-  <Footer />
+  <Content>
+    <Schedule />
+    <Faq />
+    <Footer />
+  </Content>
 </Layout>

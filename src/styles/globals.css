@@ -27,6 +27,10 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    --section-card-foreground: 222.2 84% 4.9%;
+
+    --schedule-day-foreground: 222.2 84% 4.9%;
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
@@ -41,6 +45,8 @@
     --muted: #3b3b3b;
     --container: #ffffff;
     --hero-bg: url("/svg/hero-light.svg");
+    --section-card: #ebf1ff;
+    --schedule-day: #a3a3a3;
 
     scroll-behavior: smooth;
   }
@@ -65,6 +71,10 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    --section-card-foreground: 210 40% 98%;
+
+    --schedule-day-foreground: 210 40% 98%;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -77,6 +87,8 @@
     --muted: #dedede;
     --container: #3b3b3b;
     --hero-bg: url("/svg/hero-dark.svg");
+    --section-card: #3b3b3b;
+    --schedule-day: #000614;
   }
 }
 
@@ -85,6 +97,6 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground bg-background;
+    @apply bg-background text-foreground;
   }
 }
