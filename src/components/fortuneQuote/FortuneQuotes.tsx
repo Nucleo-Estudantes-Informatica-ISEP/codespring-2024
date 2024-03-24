@@ -28,20 +28,29 @@ const FortuneQuotes: React.FC = () => {
         });
     };
 
-    fetchQuote();
+    // fetchQuote();
+    setQuote(
+      "The weak can never forgive. Forgiveness is the attribute of the strong."
+    );
+    setAuthor("Johny King");
 
     const interval = setInterval(fetchQuote, 30 * 60 * 1000); // Fetch new quote every 30 minutes
 
     return () => clearInterval(interval);
   }, []);
+
   return (
-    <div>
+    <div className="absolute top-1/2 w-full min-w-[40vw] max-w-[85vw] -translate-y-1/2">
       {error ? (
         <p>Error: {error}</p>
       ) : (
-        <div>
-          <p className="text-center text-xl italic">"{quote}"</p>
-          <p className="text-center text-xl">{author}</p>
+        <div className="">
+          <p className="bold text-center text-4xl font-bold italic">
+            "{quote}"
+          </p>
+          <p className="mt-4 text-right text-xl text-gray-800 dark:text-gray-300">
+            ~{author}
+          </p>
         </div>
       )}
     </div>
