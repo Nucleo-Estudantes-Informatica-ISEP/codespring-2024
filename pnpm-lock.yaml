@@ -14,9 +14,15 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.3.5)(tailwindcss@3.4.1)
+  '@iconify-json/fluent':
+    specifier: ^1.1.50
+    version: 1.1.50
   '@iconify-json/heroicons-outline':
     specifier: ^1.1.10
     version: 1.1.10
+  '@iconify-json/material-symbols':
+    specifier: ^1.1.76
+    version: 1.1.76
   '@iconify-json/mdi':
     specifier: ^1.1.64
     version: 1.1.64
@@ -836,8 +842,20 @@ packages:
       - supports-color
     dev: true
 
+  /@iconify-json/fluent@1.1.50:
+    resolution: {integrity: sha512-f7VOoWVAOo79dq76JQqYi3s/yXDIhM4YNky+NoX9KttyxSygS/gEPrlJCTP0WH1GdSScCjCE/dvEcliBfH+lZg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
   /@iconify-json/heroicons-outline@1.1.10:
     resolution: {integrity: sha512-3sPszsoIlLLLxxXxJkla6GuNNpJrie/84iE8cbDi+NMkaeHMsfVTOHh3LxLsPRaTBFTSlGflJ2ZWAb1e3Ae7Gw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify-json/material-symbols@1.1.76:
+    resolution: {integrity: sha512-U3S0n2eENEZmAK+b+zvNBPxHySm7eo9bFQaKODlbrFyjNfaZVwpQMs7pZ3ZmeX9YLp0CtV8XqzmRb2YdhLJIkQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
