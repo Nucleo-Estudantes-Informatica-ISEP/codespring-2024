@@ -1,8 +1,11 @@
 ---
-import EventObjectives from "../components/EventObjectives.astro";
-import Footer from "../components/Footer.astro";
-import Hero from "../components/Hero.astro";
-import Layout from "../layouts/Layout.astro";
+import EventObjectives from "@/components/EventObjectives.astro";
+import Faq from "@/components/faq/Faq.astro";
+import Footer from "@/components/Footer.astro";
+import Hero from "@/components/Hero.astro";
+import Info from "@/components/info/Info.astro";
+import Content from "@/layouts/Content.astro";
+import Layout from "@/layouts/Layout.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
@@ -12,7 +15,11 @@ import Stats from "@/components/stats/Stats.astro";
 
 <Layout title="CodeSpring 2024">
   <Hero />
-  <Stats />
-  <EventObjectives />
+  <Content>
+    <Stats />
+    <EventObjectives />
+    <Info />
+    <Faq />
+  </Content>
   <Footer />
 </Layout>
