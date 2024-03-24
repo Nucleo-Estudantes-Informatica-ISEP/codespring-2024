@@ -1,23 +1,28 @@
 [
     {
       "description": "Impacto e relevância",
-      "value": 25
+      "value": 25,
+      "icon": "tbTarget"
     },
     {
       "description": "Apresentação e pitch",
-      "value": 15
+      "value": 15,
+      "icon": "mdMessage"
     },
     {
       "description": "Potencial de escalabilidade e sustentabilidade",
-      "value": 10
+      "value": 10,
+      "icon": "piMedal"
     },
     {
       "description": "Relação com o tema",
-      "value": 20
+      "value": 20,
+      "icon": "faCheckSquare"
     },
     {
       "description": "Complexidade",
-      "value": 30
+      "value": 30,
+      "icon": "mdRocketLaunch"
     }
   ]
   

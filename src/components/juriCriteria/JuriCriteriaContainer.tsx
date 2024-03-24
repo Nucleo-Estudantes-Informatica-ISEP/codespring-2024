@@ -1,34 +1,45 @@
+import type { IconType } from "react-icons/lib";
 import juriCriteria from "../../data/juriCriteria.json";
+import { TbTarget } from "react-icons/tb";
+import { MdMessage } from "react-icons/md";
+import { PiMedal } from "react-icons/pi";
+import { FaCheckSquare } from "react-icons/fa";
+import { MdRocketLaunch } from "react-icons/md";
+
+const iconMap: { [key: string]: IconType } = {
+  tbTarget: TbTarget,
+  mdMessage: MdMessage,
+  piMedal: PiMedal,
+  faCheckSquare: FaCheckSquare,
+  mdRocketLaunch: MdRocketLaunch,
+};
 
 const JuriCriteriaContainer: React.FC = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-        {juriCriteria.map((criteria, index) => (
-          <div key={index} className="w-72 h-96 mx-auto">
-            <div className="h-full flex flex-col justify-between bg-background rounded-xl overflow-hidden shadow-xl dark:shadow-none border border-b-0 dark:border-b">
-              <div className="flex justify-center pt-12">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-32 h-32 mx-auto">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-                    <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
-                    <path d="M7 12a5 5 0 1 0 10 0a5 5 0 1 0-10 0" />
-                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0" />
-                  </g>
-                </svg>
-              </div>
-              <div className="flex justify-center px-4 py-2">
-                <p className="mt-2 font-semibold text-lg text-center">{criteria.description}</p>
-              </div>
-              <div className="bg-gradient-to-r from-red-300 to-red-800 px-4 py-3">
-                <p className="text-white text-center">{criteria.value}%</p>
+        {juriCriteria.map((criteria, index) => {
+          const IconComponent = iconMap[criteria.icon]; // Get the corresponding icon component
+          if (!IconComponent) return null; // Return null if icon is not found
+          return (
+            <div key={index} className="w-60 h-[400px] mx-auto">
+              <div className="h-full flex flex-col justify-between bg-background rounded-xl overflow-hidden shadow-xl dark:shadow-none border border-b-0 dark:border-b">
+                <div className="flex justify-center pt-12">
+                  <IconComponent className="w-24 h-24 mx-auto" />
+                </div>
+                <div className="flex justify-center px-4 py-2">
+                  <p className="mt-2 font-bold text-lg text-center">{criteria.description}</p>
+                </div>
+                <div className="bg-gradient-to-r from-red-300 to-red-800 px-4 py-3">
+                  <p className="text-white text-center">{criteria.value}%</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
 };
 
 export default JuriCriteriaContainer;
-  
