@@ -63,6 +63,10 @@ const config: Config = {
           DEFAULT: "var(--schedule-day)",
           foreground: "hsl(var(--schedule-day-foreground))"
         },
+        criteriaValue: {
+          DEFAULT:  "var(--criteria-value)",
+          foreground: "hsl(var(--schedule-day-foreground))"
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
