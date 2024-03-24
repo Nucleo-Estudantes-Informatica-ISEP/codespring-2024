@@ -28,11 +28,7 @@ const FortuneQuotes: React.FC = () => {
         });
     };
 
-    // fetchQuote();
-    setQuote(
-      "The weak can never forgive. Forgiveness is the attribute of the strong."
-    );
-    setAuthor("Johny King");
+    fetchQuote();
 
     const interval = setInterval(fetchQuote, 30 * 60 * 1000); // Fetch new quote every 30 minutes
 
