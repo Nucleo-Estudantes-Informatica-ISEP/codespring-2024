@@ -5,11 +5,11 @@
   },
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "prettier-plugin-astro",
     "@typescript-eslint",
     "prettier",
     "eslint-plugin-import-helpers",
-    "eslint-plugin-tailwindcss"
+    "eslint-plugin-tailwindcss",
+    "prettier-plugin-astro"
   ],
   "extends": [
     "plugin:astro/recommended",
