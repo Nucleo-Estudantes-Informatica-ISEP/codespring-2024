@@ -1,4 +1,4 @@
-import schedule from "../../data/schedule.json";
+/*import schedule from "../../data/schedule.json";
 
 const ScheduleContainer: React.FC = () => {
   return (
@@ -28,4 +28,4 @@ const ScheduleContainer: React.FC = () => {
   );
 };
 
-export default ScheduleContainer;
+export default ScheduleContainer;*/
