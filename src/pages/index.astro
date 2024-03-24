@@ -1,15 +1,18 @@
 ---
+import EventObjectives from "../components/EventObjectives.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
-import EventObjectives from "../components/EventObjectives.astro";
 import Layout from "../layouts/Layout.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
+
+import Stats from "@/components/stats/Stats.astro";
 ---
 
 <Layout title="CodeSpring 2024">
   <Hero />
+  <Stats />
   <EventObjectives />
   <Footer />
 </Layout>
