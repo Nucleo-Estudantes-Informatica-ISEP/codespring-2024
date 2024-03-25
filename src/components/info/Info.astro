@@ -4,18 +4,23 @@ import Title from "../Title.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<section class="mx-auto my-12 w-full max-w-[680px]">
+<section class="my-32 w-full px-4 md:px-32">
   <Title>Informações Adicionais</Title>
-  <div class="grid grid-cols-1 gap-8 py-6 md:grid-cols-3">
+  <div
+    class="flex flex-col items-center justify-around gap-y-8 py-6 md:grid-cols-3 md:flex-row md:gap-x-32"
+  >
     <div
-      class="flex h-72 flex-col items-center justify-center space-y-2 rounded-3xl border-2 border-gray-300 p-8 text-center"
+      class="flex min-h-72 w-full flex-col items-center justify-between space-y-2 rounded-3xl border-2 border-gray-300 bg-slate-200/10 p-8 text-center"
     >
       <h3 class="text-xl font-bold">Onde?</h3>
       <Icon title="Local" class="size-16" name="mdi:earth" />
-      <p class="py-2">Traz a famelga toda e vem ter connosco ao ISEP!</p>
+      <p class="py-2">
+        O Hackathon irá ter lugar no ISEP, no Edifício B nas salas B107 e B109.
+        Encontramo-nos lá!
+      </p>
     </div>
     <div
-      class="h-92 flex flex-col items-center justify-center space-y-4 rounded-3xl border-2 border-gray-300 p-8 text-center"
+      class="flex min-h-72 w-full flex-col items-center justify-between space-y-2 rounded-3xl border-2 border-gray-300 bg-slate-200/10 p-8 text-center"
     >
       <h3 class="text-xl font-bold">Quem pode participar?</h3>
       <Icon
@@ -24,15 +29,19 @@ import { Icon } from "astro-icon/components";
         name="mdi:account-group"
       />
       <p class="py-2">
-        Toda a gente! Dos mais novos aos mais velhos, toda a gente é bem-vinda!
+        Todos podem participar, independentemente da idade ou universidade,
+        estudante ou não estudante, todos são bem-vindos.
       </p>
     </div>
     <div
-      class="flex h-72 flex-col items-center justify-center space-y-4 rounded-3xl border-2 border-gray-300 p-8 text-center"
+      class="flex min-h-72 w-full flex-col items-center justify-between space-y-2 rounded-3xl border-2 border-gray-300 bg-slate-200/10 p-8 text-center"
     >
       <h3 class="text-xl font-bold">Como?</h3>
       <Icon title="Como participar" class="size-16" name="mdi:arrow-right" />
-      <p class="py-2">É só clicares em "Registar" e já está!</p>
+      <p class="py-2">
+        Basta clicares em “Registar”, preencher o formulário e ficas com a tua
+        inscrição assegurada. Podemos contar contigo?
+      </p>
     </div>
   </div>
 </section>

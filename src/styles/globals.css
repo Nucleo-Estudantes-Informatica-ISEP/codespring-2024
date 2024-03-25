@@ -40,7 +40,8 @@
     --accent: #mv;
     --muted: #3b3b3b;
     --container: #ffffff;
-    --hero-bg: url("/svg/hero-light.svg");
+    --bg-image: url("/svg/bg-light.svg");
+    --bg-image-mobile: url("/svg/bg-light-sm.svg");
 
     scroll-behavior: smooth;
   }
@@ -76,7 +77,8 @@
     --accent: #ff73af;
     --muted: #dedede;
     --container: #3b3b3b;
-    --hero-bg: url("/svg/hero-dark.svg");
+    --bg-image: url("/svg/bg-dark.svg");
+    --bg-image-mobile: url("/svg/bg-dark-sm.svg");
   }
 }
 
@@ -85,6 +87,6 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground bg-background;
+    @apply bg-background text-foreground;
   }
 }

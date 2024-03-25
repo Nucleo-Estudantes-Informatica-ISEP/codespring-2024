@@ -36,29 +36,27 @@ const Loading = ({ title, year, month, day }: LoadingParams) => {
     startCountDown();
   }, [startCountDown]);
   return (
-    <div className="my-[10vh]">
-      <div className="flex h-full w-full flex-col items-center justify-center gap-8 sm:gap-16">
-        <span className="px-2 text-center text-2xl font-semibold leading-none tracking-widest sm:text-3xl">
-          {title}
-        </span>
-        <div className="flex justify-center gap-3 sm:gap-8">
-          <CountdownTimer
-            time={+countDownTime.days}
-            label={+countDownTime.days === 1 ? "Dia" : "Dias"}
-          />
-          <CountdownTimer
-            time={+countDownTime.hours}
-            label={+countDownTime.hours === 1 ? "Hora" : "Horas"}
-          />
-          <CountdownTimer
-            time={+countDownTime.minutes}
-            label={+countDownTime.minutes === 1 ? "Minuto" : "Minutos"}
-          />
-          <CountdownTimer
-            time={+countDownTime.seconds}
-            label={+countDownTime.seconds === 1 ? "Segundo" : "Segundos"}
-          />
-        </div>
+    <div className="flex h-full w-full flex-col items-center justify-center gap-8 sm:gap-16">
+      <span className="px-2 text-center text-2xl font-semibold leading-none tracking-widest sm:text-3xl">
+        {title}
+      </span>
+      <div className="flex justify-center gap-3 sm:gap-8">
+        <CountdownTimer
+          time={+countDownTime.days}
+          label={+countDownTime.days === 1 ? "Dia" : "Dias"}
+        />
+        <CountdownTimer
+          time={+countDownTime.hours}
+          label={+countDownTime.hours === 1 ? "Hora" : "Horas"}
+        />
+        <CountdownTimer
+          time={+countDownTime.minutes}
+          label={+countDownTime.minutes === 1 ? "Minuto" : "Minutos"}
+        />
+        <CountdownTimer
+          time={+countDownTime.seconds}
+          label={+countDownTime.seconds === 1 ? "Segundo" : "Segundos"}
+        />
       </div>
     </div>
   );
