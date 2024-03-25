@@ -17,12 +17,12 @@ const iconMap: { [key: string]: IconType } = {
 const JuriCriteriaContainer: React.FC = () => {
   return (
     <div className="w-full flex justify-center">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <div className="flex flex-wrap justify-center w-full max-w-8xl">
         {juriCriteria.map((criteria, index) => {
           const IconComponent = iconMap[criteria.icon]; 
           if (!IconComponent) return null; 
           return (
-            <div key={index} className="w-60 h-[400px] mx-auto">
+            <div key={index} className="w-52 h-[375px] mx-1 mb-4">
               <div className="h-full flex flex-col justify-between bg-background rounded-xl overflow-hidden shadow-xl dark:shadow-none border-2 border-b-0 dark:border-2">
                 <div className="flex justify-center pt-12">
                   <IconComponent className="w-24 h-24 mx-auto" />
