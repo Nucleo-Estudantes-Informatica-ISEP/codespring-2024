@@ -26,5 +26,13 @@
   {
     "question": "O que vai acontecer na sessão de abertura?",
     "answer": "Na sessão de abertura, os participantes serão informados do tema do projeto a ser desenvolvido, os critérios que irão ser tomados para proceder à avaliação dos projetos, e o horário completo do evento, com todas as atividades extra e opcionais. "
+  },
+  {
+    "question": "O que vai acontecer na sessão de encerramento?",
+    "answer": "Na sessão de encerramento, os projetos serão apresentados e avaliados pelos júris. Serão anunciados os vencedores e entregues os prémios."
+  },
+  {
+    "question": "Todos os membros devem estar presentes na sessão de abertura?",
+    "answer": "Não. A presença na sessão de abertura é opcional, mas é recomendada."
   }
 ]
