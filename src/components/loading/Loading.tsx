@@ -18,6 +18,8 @@ interface CountDownTime {
   seconds: string;
 }
 
+const ANIMATION_ODD = 50;
+
 const Loading = ({ title, year, month, day }: LoadingParams) => {
   const [countDownTime, setCountDownTIme] = useState<CountDownTime>({
     days: "00",
@@ -32,9 +34,11 @@ const Loading = ({ title, year, month, day }: LoadingParams) => {
       setCountDownTIme(getTimeDifference(countDownDate.getTime()));
     }, 1000);
   }, []);
+
   useEffect(() => {
     startCountDown();
   }, [startCountDown]);
+
   return (
     <div className="flex h-full w-full flex-col items-center justify-center gap-8 sm:gap-16">
       <span className="px-2 text-center text-2xl font-semibold leading-none tracking-widest sm:text-3xl">
@@ -44,18 +48,22 @@ const Loading = ({ title, year, month, day }: LoadingParams) => {
         <CountdownTimer
           time={+countDownTime.days}
           label={+countDownTime.days === 1 ? "Dia" : "Dias"}
+          animated={Math.floor(Math.random() * ANIMATION_ODD) === 1}
         />
         <CountdownTimer
           time={+countDownTime.hours}
           label={+countDownTime.hours === 1 ? "Hora" : "Horas"}
+          animated={Math.floor(Math.random() * ANIMATION_ODD) === 1}
         />
         <CountdownTimer
           time={+countDownTime.minutes}
           label={+countDownTime.minutes === 1 ? "Minuto" : "Minutos"}
+          animated={Math.floor(Math.random() * ANIMATION_ODD) === 1}
         />
         <CountdownTimer
           time={+countDownTime.seconds}
           label={+countDownTime.seconds === 1 ? "Segundo" : "Segundos"}
+          animated={Math.floor(Math.random() * ANIMATION_ODD) === 1}
         />
       </div>
     </div>
