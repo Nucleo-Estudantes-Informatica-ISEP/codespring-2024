@@ -14,9 +14,15 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.3.5)(tailwindcss@3.4.1)
+  '@iconify-json/fluent':
+    specifier: ^1.1.50
+    version: 1.1.50
   '@iconify-json/heroicons-outline':
     specifier: ^1.1.10
     version: 1.1.10
+  '@iconify-json/material-symbols':
+    specifier: ^1.1.76
+    version: 1.1.76
   '@iconify-json/mdi':
     specifier: ^1.1.64
     version: 1.1.64
@@ -56,6 +62,9 @@ dependencies:
   sharp:
     specifier: ^0.33.2
     version: 0.33.2
+  react-icons:
+    specifier: ^5.0.1
+    version: 5.0.1(react@18.2.0)
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.1
@@ -836,8 +845,20 @@ packages:
       - supports-color
     dev: true
 
+  /@iconify-json/fluent@1.1.50:
+    resolution: {integrity: sha512-f7VOoWVAOo79dq76JQqYi3s/yXDIhM4YNky+NoX9KttyxSygS/gEPrlJCTP0WH1GdSScCjCE/dvEcliBfH+lZg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
   /@iconify-json/heroicons-outline@1.1.10:
     resolution: {integrity: sha512-3sPszsoIlLLLxxXxJkla6GuNNpJrie/84iE8cbDi+NMkaeHMsfVTOHh3LxLsPRaTBFTSlGflJ2ZWAb1e3Ae7Gw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify-json/material-symbols@1.1.76:
+    resolution: {integrity: sha512-U3S0n2eENEZmAK+b+zvNBPxHySm7eo9bFQaKODlbrFyjNfaZVwpQMs7pZ3ZmeX9YLp0CtV8XqzmRb2YdhLJIkQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
@@ -4805,6 +4826,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons@5.0.1(react@18.2.0):
+    resolution: {integrity: sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-refresh@0.14.0:

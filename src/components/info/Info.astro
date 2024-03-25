@@ -1,0 +1,38 @@
+---
+import Title from "../Title.astro";
+
+import { Icon } from "astro-icon/components";
+---
+
+<section class="mx-auto my-12 w-full max-w-[680px]">
+  <Title>Informações Adicionais</Title>
+  <div class="grid grid-cols-1 gap-8 py-6 md:grid-cols-3">
+    <div
+      class="flex h-72 flex-col items-center justify-center space-y-2 rounded-3xl border-2 border-gray-300 p-8 text-center"
+    >
+      <h3 class="text-xl font-bold">Onde?</h3>
+      <Icon title="Local" class="size-16" name="mdi:earth" />
+      <p class="py-2">Traz a famelga toda e vem ter connosco ao ISEP!</p>
+    </div>
+    <div
+      class="h-92 flex flex-col items-center justify-center space-y-4 rounded-3xl border-2 border-gray-300 p-8 text-center"
+    >
+      <h3 class="text-xl font-bold">Quem pode participar?</h3>
+      <Icon
+        title="Quem pode participar"
+        class="size-16"
+        name="mdi:account-group"
+      />
+      <p class="py-2">
+        Toda a gente! Dos mais novos aos mais velhos, toda a gente é bem-vinda!
+      </p>
+    </div>
+    <div
+      class="flex h-72 flex-col items-center justify-center space-y-4 rounded-3xl border-2 border-gray-300 p-8 text-center"
+    >
+      <h3 class="text-xl font-bold">Como?</h3>
+      <Icon title="Como participar" class="size-16" name="mdi:arrow-right" />
+      <p class="py-2">É só clicares em "Registar" e já está!</p>
+    </div>
+  </div>
+</section>

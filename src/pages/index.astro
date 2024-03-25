@@ -1,13 +1,17 @@
 ---
+import EventObjectives from "@/components/EventObjectives.astro";
 import Faq from "@/components/faq/Faq.astro";
 import Footer from "@/components/Footer.astro";
 import Hero from "@/components/Hero.astro";
+import Info from "@/components/info/Info.astro";
+import Loading from "@/components/Loading";
 import Schedule from "@/components/schedule/Schedule.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
 
+import Stats from "@/components/stats/Stats.astro";
 import Content from "@/layouts/Content.astro";
 ---
 
@@ -15,7 +19,17 @@ import Content from "@/layouts/Content.astro";
   <Hero />
   <Content>
     <Schedule />
+    <Loading
+      title="Act Now, Time is Short"
+      day={12}
+      month={3}
+      year={2024}
+      client:load
+    />
+    <Stats />
+    <EventObjectives />
+    <Info />
     <Faq />
-    <Footer />
   </Content>
+  <Footer />
 </Layout>
