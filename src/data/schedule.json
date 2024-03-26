@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "date": "12 abril",
+        "name": "Sexta-Feira",
+        "events": [
+            {
+            "startTime": "17:00h",
+            "description": "sessão de abertura",
+            "location": "B200"
+            },
+            {
+            "startTime": "18:00h",
+            "description": "revelação do tema",
+            "location": "B200"
+            },
+            {
+            "startTime": "19:00h",
+            "description": "jantar convívio",
+            "location": "cantina"
+            },
+            {
+            "startTime": "20:00h",
+            "description": "inicío desenvolvimento",
+            "location": "B100"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "date": "13 abril",
+        "name": "Sábado",
+        "events": [
+            {
+            "startTime": "13:00h",
+            "description": "almoço",
+            "location": "cantina"
+            },
+            {
+            "startTime": "20:00h",
+            "description": "jantar",
+            "location": "cantina"
+            }
+        ]
+    
+    },
+    {
+        "id": 3,
+        "date": "14 abril",
+        "name": "Domingo",
+        "events": [
+            {
+            "startTime": "13:00h",
+            "description": "almoço",
+            "location": "cantina"
+            },
+            {
+            "startTime": "16:00h",
+            "description": "submissão dos projetos",
+            "location": "B200"
+            },
+            {
+            "startTime": "16:30h",
+            "description": "pitch aos juris",
+            "location": "B200"
+            },
+            {
+            "startTime": "18:30h",
+            "description": "entrega dos prémios",
+            "location": "B200"
+            }
+        ]
+    }
+]

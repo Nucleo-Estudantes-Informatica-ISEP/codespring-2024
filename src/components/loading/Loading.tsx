@@ -18,6 +18,7 @@ interface CountDownTime {
   seconds: string;
 }
 
+// chance of one of the timer cards trigger the animation (1/ANIMATION_ODD)
 const ANIMATION_ODD = 50;
 
 const Loading = ({ title, year, month, day }: LoadingParams) => {
