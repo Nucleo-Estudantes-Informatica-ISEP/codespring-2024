@@ -44,14 +44,10 @@
     --accent: #mv;
     --muted: #3b3b3b;
     --container: #ffffff;
-<<<<<<< HEAD
     --bg-image: url("/svg/bg-light.svg");
     --bg-image-mobile: url("/svg/bg-light-sm.svg");
-=======
-    --hero-bg: url("/svg/hero-light.svg");
     --section-card: #ebf1ff;
     --schedule-day: #a3a3a3;
->>>>>>> origin/feat/schedule-component
 
     scroll-behavior: smooth;
   }
@@ -93,7 +89,6 @@
     --container: #3b3b3b;
     --bg-image: url("/svg/bg-dark.svg");
     --bg-image-mobile: url("/svg/bg-dark-sm.svg");
-    --hero-bg: url("/svg/hero-dark.svg");
     --section-card: #3b3b3b;
     --schedule-day: #000614;
   }
