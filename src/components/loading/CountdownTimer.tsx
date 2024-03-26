@@ -25,11 +25,11 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
         }}
         className="flex size-16 items-center justify-between rounded-lg bg-container sm:size-32 lg:size-40"
       >
-        <div className="relative !-left-[6px] h-2.5 w-2.5 rounded-full bg-accent sm:h-3 sm:w-3"></div>
+        <div className="relative !-left-[6px] h-2.5 w-2.5 rounded-full bg-primary dark:bg-accent sm:h-3 sm:w-3"></div>
         <span className="text-3xl font-semibold sm:text-6xl lg:text-7xl">
           {time}
         </span>
-        <div className="relative -right-[6px] h-2.5 w-2.5 rounded-full bg-accent sm:h-3 sm:w-3"></div>
+        <div className="relative -right-[6px] h-2.5 w-2.5 rounded-full bg-primary dark:bg-accent sm:h-3 sm:w-3"></div>
       </motion.div>
       <span className="text-center text-xs capitalize leading-none sm:text-2xl">
         {label}
