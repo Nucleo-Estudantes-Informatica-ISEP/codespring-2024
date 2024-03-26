@@ -14,9 +14,14 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
   return (
     <div className="relative flex flex-col gap-5">
       <motion.div
+        initial={{ scale: 1, rotate: 0 }}
         animate={{
-          scale: animated ? [1, 1.1, 1] : 1,
-          rotate: animated ? [0, 270, 0] : 0
+          scale: animated ? 1.05 : 1,
+          rotate: animated
+            ? Math.random() > 0.5 // randomize the rotation direction
+              ? 45
+              : -45
+            : 0
         }}
         className="flex size-16 items-center justify-between rounded-lg bg-container sm:size-32 lg:size-40"
       >

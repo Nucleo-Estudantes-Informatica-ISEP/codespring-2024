@@ -1,83 +1,78 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import schedule from "../../data/schedule.json";
 
-interface ScheduleSectionProps {
-  children?: React.ReactNode;
-}
+const DEFAULT_ID = schedule[0]?.id;
 
-const ScheduleSection: React.FC<ScheduleSectionProps> = () => {
-  const DEFAULT_ID = schedule[0]?.id;
-
+const ScheduleSection: React.FC = () => {
   const [activeDay, setActiveDay] = useState(DEFAULT_ID);
 
-  const isActiveDay = (day: number) => day === activeDay;
+  function isActiveDay(day: number) {
+    return day === activeDay;
+  }
 
-  const activeDayButtonStyles = (id: number) =>
-    ` ${isActiveDay(id) ? "bg-primary" : "bg-gray-600"}`;
-
-  const handleDayClick = (id: number) => {
-    setActiveDay(id);
-  };
-
-  const getActiveDay = () => {
+  function getActiveDay() {
     return schedule.find((day) => day.id === activeDay);
-  };
+  }
+
+  function handleDayClick(id: number) {
+    setActiveDay(id);
+  }
+
+  function getButtonStyles(id: number) {
+    return isActiveDay(id) ? "bg-primary" : "bg-section-card";
+  }
 
   return (
-    <>
-      <div className="container flex w-full flex-col items-center justify-center">
-        <div className="mb-6 flex w-full flex-col justify-center lg:flex-row">
-          {schedule.map((day) => {
-            const { id, date, name } = day;
-
-            return (
-              <button
-                key={id}
-                className={`
-                    ${activeDayButtonStyles(id)}
-                    text-md w-full border-2 border-slate-400 px-4 py-3 uppercase transition-all duration-300 hover:brightness-75 md:text-lg lg:text-xl`}
-                onClick={() => handleDayClick(id)}
-              >
-                {`${name} - ${date}`}
-              </button>
-            );
-          })}
-        </div>
-        <div
-          className={`bg-sectionCard ${
-            getActiveDay()?.events.length === 4
-              ? "grid w-full lg:grid-cols-4"
-              : "grid w-full lg:grid-cols-2"
-          }`}
-        >
-          {getActiveDay()?.events.map((event, index) => (
-            <div
-              key={index}
-              className={`flex-1 px-4 py-6 2xl:py-8 ${
-                index !== getActiveDay()!.events.length - 1
-                  ? "border-b border-white lg:border-b-0 lg:border-r lg:border-white"
-                  : ""
-              }`}
-            >
-              <div className="flex items-start pb-6">
-                <div className="flex rounded-lg bg-scheduleDay p-1">
-                  <p className="md:text-md px-1 text-left text-xl font-light text-white 2xl:text-xl">
-                    {event.startTime}
-                  </p>
-                </div>
-                <p className="pl-4 text-left text-xl font-light">
-                  {event.location}
-                </p>
-              </div>
-              <p className="w-[255px] max-w-full text-left text-[16px] font-semibold capitalize md:text-[16px] lg:text-[24px]">
-                {event.description}
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="mb-6 flex w-full flex-col justify-center lg:flex-row">
+        {schedule.map(({ id, date, name }) => (
+          <motion.button
+            key={id}
+            className={`
+                    ${getButtonStyles(id)} text-md w-full
+                     border-slate-300 px-4 py-3 uppercase transition-all
+                      duration-200 hover:brightness-90 md:text-lg lg:text-xl`}
+            onClick={() => handleDayClick(id)}
+          >
+            {`${name} - ${date}`}
+          </motion.button>
+        ))}
+      </div>
+      <div
+        className={`min-h-48 bg-section-card py-3 ${
+          getActiveDay()?.events.length === 4
+            ? "grid w-full lg:grid-cols-4"
+            : "grid w-full lg:grid-cols-2"
+        }`}
+      >
+        {getActiveDay()?.events.map((event, index) => (
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            key={event.description}
+            className={`px-4 py-6 md:py-8 ${
+              index !== getActiveDay()!.events.length - 1
+                ? "border-b border-white lg:border-b-0 lg:border-r"
+                : ""
+            }`}
+          >
+            <div className="mb-6 flex items-center">
+              <p className="md:text-md rounded-lg bg-secondary px-3 py-0.5 text-center align-middle text-xl font-light md:py-1 lg:text-xl">
+                {event.startTime}
+              </p>
+              <p className="ml-3 text-left text-xl font-light capitalize">
+                {event.location}
               </p>
             </div>
-          ))}
-        </div>
+            <p className="w-full min-w-[255px] text-left text-xl font-semibold capitalize lg:text-2xl">
+              {event.description}
+            </p>
+          </motion.div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -46,8 +46,7 @@
     --container: #ffffff;
     --bg-image: url("/svg/bg-light.svg");
     --bg-image-mobile: url("/svg/bg-light-sm.svg");
-    --section-card: #ebf1ff;
-    --schedule-day: #a3a3a3;
+    --section-card: #dce0ee;
 
     scroll-behavior: smooth;
   }
@@ -90,7 +89,6 @@
     --bg-image: url("/svg/bg-dark.svg");
     --bg-image-mobile: url("/svg/bg-dark-sm.svg");
     --section-card: #3b3b3b;
-    --schedule-day: #000614;
   }
 }
 

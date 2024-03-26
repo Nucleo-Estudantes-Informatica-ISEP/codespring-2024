@@ -55,14 +55,14 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
-        sectionCard: {
+        "section-card": {
           DEFAULT: "var(--section-card)",
           foreground: "hsl(var(--section-card-foreground))"
         },
-        scheduleDay: {
+        "schedule-day": {
           DEFAULT: "var(--schedule-day)",
           foreground: "hsl(var(--schedule-day-foreground))"
-        },
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
