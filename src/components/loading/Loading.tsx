@@ -18,10 +18,11 @@ interface CountDownTime {
   seconds: string;
 }
 
+// chance of one of the timer cards trigger the animation (1/ANIMATION_ODD)
 const ANIMATION_ODD = 50;
 
 const Loading = ({ title, year, month, day }: LoadingParams) => {
-  const [countDownTime, setCountDownTIme] = useState<CountDownTime>({
+  const [countDownTime, setCountDownTime] = useState<CountDownTime>({
     days: "00",
     hours: "00",
     minutes: "00",
@@ -31,7 +32,7 @@ const Loading = ({ title, year, month, day }: LoadingParams) => {
   const startCountDown = useCallback(() => {
     const countDownDate = new Date(year, month - 1, day, 0, 0, 0);
     setInterval(() => {
-      setCountDownTIme(getTimeDifference(countDownDate.getTime()));
+      setCountDownTime(getTimeDifference(countDownDate.getTime()));
     }, 1000);
   }, []);
 

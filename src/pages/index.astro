@@ -6,13 +6,14 @@ import Info from "@/components/info/Info.astro";
 import Loading from "@/components/loading/Loading";
 import RegisterSection from "@/components/RegisterSection.astro";
 import Rules from "@/components/rules/Rules.astro";
-import Content from "@/layouts/Content.astro";
+import Schedule from "@/components/schedule/Schedule.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
 
 import Stats from "@/components/stats/Stats.astro";
+import Content from "@/layouts/Content.astro";
 ---
 
 <Layout title="CodeSpring 2024">
@@ -25,6 +26,7 @@ import Stats from "@/components/stats/Stats.astro";
       year={2024}
       client:load
     />
+    <Schedule />
     <Stats />
     <EventObjectives />
     <Info />

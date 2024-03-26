@@ -27,6 +27,10 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    --section-card-foreground: 222.2 84% 4.9%;
+
+    --schedule-day-foreground: 222.2 84% 4.9%;
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
@@ -42,6 +46,7 @@
     --container: #ffffff;
     --bg-image: url("/svg/bg-light.svg");
     --bg-image-mobile: url("/svg/bg-light-sm.svg");
+    --section-card: #dce0ee;
 
     scroll-behavior: smooth;
   }
@@ -66,6 +71,10 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    --section-card-foreground: 210 40% 98%;
+
+    --schedule-day-foreground: 210 40% 98%;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -79,6 +88,7 @@
     --container: #3b3b3b;
     --bg-image: url("/svg/bg-dark.svg");
     --bg-image-mobile: url("/svg/bg-dark-sm.svg");
+    --section-card: #3b3b3b;
   }
 }
 
