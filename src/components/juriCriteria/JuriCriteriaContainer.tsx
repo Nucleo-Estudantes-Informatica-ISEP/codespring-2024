@@ -1,17 +1,17 @@
-import type { IconType } from "react-icons/lib";
-import juriCriteria from "../../data/juriCriteria.json";
-import { TbTarget } from "react-icons/tb";
-import { MdMessage } from "react-icons/md";
-import { PiMedal } from "react-icons/pi";
-import { FaCheckSquare } from "react-icons/fa";
-import { MdRocketLaunch } from "react-icons/md";
 
-const iconMap: { [key: string]: IconType } = {
-  tbTarget: TbTarget,
-  mdMessage: MdMessage,
-  piMedal: PiMedal,
-  faCheckSquare: FaCheckSquare,
-  mdRocketLaunch: MdRocketLaunch,
+import juriCriteria from "../../data/juriCriteria.json";
+import { Target } from 'lucide-react';
+import { MessageSquareText } from 'lucide-react';
+import { Award } from 'lucide-react';
+import { Check } from 'lucide-react';
+import { Rocket } from 'lucide-react';
+
+const iconMap: { [key: string]: any } = {
+  target: Target,
+  message: MessageSquareText,
+  award: Award,
+  check: Check,
+  rocket: Rocket,
 };
 
 const JuriCriteriaContainer: React.FC = () => {
