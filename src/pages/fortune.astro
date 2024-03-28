@@ -1,0 +1,18 @@
+---
+import FortuneQuote from "../components/fortune/FortuneQuote";
+import Navbar from "../components/navbar/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/globals.css";
+import "../styles/main.css";
+---
+
+<Layout title="CodeSpring 2024 | Fortune">
+  <main class="min-h-screen">
+    <Navbar />
+
+    <div class="flex h-[82vh] w-full items-center justify-center">
+      <FortuneQuote client:load />
+    </div>
+  </main>
+</Layout>

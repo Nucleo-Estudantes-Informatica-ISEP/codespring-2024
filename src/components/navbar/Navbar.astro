@@ -4,10 +4,13 @@ import ThemeSwitch from "../navbar/ThemeSwitch.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<nav class="flex h-[12vh] w-full items-center justify-between px-8">
+<nav class="h-12vh flex w-full items-center justify-between px-8">
   <div class="flex items-center gap-x-4">
-    <div class="size-8 rounded-lg bg-slate-400"></div>
-    <h2 class="text-xl">CodeSpring</h2>
+    <div class="size-16 rounded-lg md:size-20">
+      <a href="/">
+        <img src="/logo.png" alt="CodeSpring logo" class="h-full w-full" />
+      </a>
+    </div>
   </div>
   <div class="flex items-center gap-x-4">
     <a
@@ -15,7 +18,7 @@ import { Icon } from "astro-icon/components";
       target="_blank"
       class="rounded-lg bg-container p-2"
     >
-      <Icon title="Instagram NEI-ISEP" class="size-5" name="mdi:instagram" />
+      <Icon title="Instagram NEI-ISEP" class="h-5 w-5" name="mdi:instagram" />
     </a>
     <ThemeSwitch />
   </div>

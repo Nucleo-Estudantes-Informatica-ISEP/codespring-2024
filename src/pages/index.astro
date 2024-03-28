@@ -1,16 +1,39 @@
 ---
-import Faq from "../components/faq/Faq.astro";
-import Hero from "../components/Hero.astro";
-import Content from "../layouts/Content.astro";
-import Layout from "../layouts/Layout.astro";
+import EventObjectives from "@/components/EventObjectives.astro";
+import Faq from "@/components/faq/Faq.astro";
+import Footer from "@/components/Footer.astro";
+import Hero from "@/components/Hero.astro";
+import Info from "@/components/info/Info.astro";
+import Loading from "@/components/loading/Loading";
+import RegisterSection from "@/components/RegisterSection.astro";
+import Rules from "@/components/rules/Rules.astro";
+import Schedule from "@/components/schedule/Schedule.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
+
+import Stats from "@/components/stats/Stats.astro";
+import Content from "@/layouts/Content.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="CodeSpring 2023">
+<Layout title="CodeSpring 2024 | Home">
   <Hero />
   <Content>
+    <Loading
+      title="Act Now, Time is Short"
+      day={12}
+      month={4}
+      year={2024}
+      client:load
+    />
+    <Schedule />
+    <Stats />
+    <EventObjectives />
+    <Info />
+    <Rules />
     <Faq />
+    <RegisterSection />
   </Content>
+  <Footer />
 </Layout>

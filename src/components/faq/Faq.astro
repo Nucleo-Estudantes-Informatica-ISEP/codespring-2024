@@ -3,10 +3,12 @@ import Title from "../Title.astro";
 import QuestionsContainer from "./QuestionsContainer";
 ---
 
-<>
+<div>
   <Title>FAQ</Title>
 
-  <section class="mx-auto w-full max-w-[680px] px-8">
+  <section
+    class="relative mx-auto min-h-[50rem] w-full max-w-[680px] px-8 md:min-h-[42rem]"
+  >
     <QuestionsContainer client:load />
   </section>
-</>
+</div>
