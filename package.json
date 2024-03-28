@@ -15,6 +15,8 @@
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/heroicons-outline": "^1.1.10",
     "@iconify-json/mdi": "^1.1.64",
+    "@iconify-json/fluent": "^1.1.50",
+    "@iconify-json/material-symbols": "^1.1.76",
     "@radix-ui/react-accordion": "^1.1.2",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
@@ -26,6 +28,8 @@
     "lucide-react": "^0.335.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sharp": "^0.33.2",
+    "react-icons": "^5.0.1",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.3.3"
