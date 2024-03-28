@@ -17,7 +17,7 @@ const RulesContainer: React.FC = () => {
             x: 0
           }}
           transition={{
-            duration: 0.2 * (index + 1)
+            duration: 0.1 * (index + 1)
           }}
           viewport={{
             once: true
