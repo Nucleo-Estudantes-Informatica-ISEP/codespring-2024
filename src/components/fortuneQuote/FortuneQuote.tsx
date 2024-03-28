@@ -66,7 +66,7 @@ const FortuneQuote: React.FC = () => {
             key={quote}
             className="bold border-l-4 border-accent py-6 pl-6 text-center text-2xl font-bold italic md:text-4xl"
           >
-            {quote}"
+            "{quote}"
           </motion.p>
           <motion.p
             initial={{
