@@ -20,8 +20,8 @@ const themes = [
 ];
 
 const FortuneQuote: React.FC = () => {
-  const [quote, setQuote] = useState("Loading...");
-  const [author, setAuthor] = useState("Loading...");
+  const [quote, setQuote] = useState("...");
+  const [author, setAuthor] = useState("...");
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
