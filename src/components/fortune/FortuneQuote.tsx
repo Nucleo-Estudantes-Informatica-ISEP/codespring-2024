@@ -53,7 +53,7 @@ const FortuneQuote: React.FC = () => {
       {error ? (
         <p>Error: {error}</p>
       ) : (
-        <div key={quote} className="relative">
+        <div key={quote} className="relative bg-background">
           <motion.p
             initial={{
               opacity: 0,
@@ -64,7 +64,7 @@ const FortuneQuote: React.FC = () => {
               x: 0
             }}
             key={quote}
-            className="bold border-l-4 border-accent py-6 pl-6 text-center text-2xl font-bold italic md:text-4xl"
+            className="bold border-l-4 border-accent  py-6 pl-6 text-center text-2xl font-bold italic md:text-4xl"
           >
             "{quote}"
           </motion.p>
