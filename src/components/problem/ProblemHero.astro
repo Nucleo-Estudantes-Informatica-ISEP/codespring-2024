@@ -1,12 +1,15 @@
 ---
 import Navbar from "../navbar/Navbar.astro";
-import Highlight from "../problem/Highlight";
+import Globe from "./Globe";
+import Highlight from "./Highlight.astro";
 ---
 
 <main class="min-h-[100vh]">
   <Navbar />
 
   <div class="flex h-[68vh] w-full flex-col items-center justify-center">
+    <Globe client:only />
+
     <div class="grid w-full items-center justify-items-center md:w-fit">
       <h2 class="text-3xl leading-none md:text-[34px]">
         "The only way to do <Highlight color="primary" tilt="left"
