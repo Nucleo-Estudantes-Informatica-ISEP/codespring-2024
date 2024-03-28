@@ -10,16 +10,18 @@ import questions from "../../data/faq.json";
 const QuestionsContainer: React.FC = () => {
   return (
     <Accordion className="w-full" type="single" collapsible>
-      {questions.map((question, index) => (
+      {questions.map((question) => (
         <AccordionItem
-          className="min-h-12"
+          className="min-h-12 bg-background"
           value={question.question}
-          key={index}
+          key={question.question}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="text-left md:text-lg">
             {question.question}
           </AccordionTrigger>
-          <AccordionContent>{question.answer}</AccordionContent>
+          <AccordionContent className="mt-1 md:text-base">
+            {question.answer}
+          </AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
