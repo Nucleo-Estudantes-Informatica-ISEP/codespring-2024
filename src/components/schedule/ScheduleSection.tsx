@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 import schedule from "../../data/schedule.json";
 
@@ -24,32 +24,37 @@ const ScheduleSection: React.FC = () => {
     return isActiveDay(id) ? "bg-primary" : "bg-section-card";
   }
 
+  const isReducedMotion = useReducedMotion();
+
   return (
     <div className="flex w-full flex-col items-center justify-center">
       <div className="mb-6 flex w-full flex-col justify-center lg:flex-row">
         {schedule.map(({ id, date, name }) => (
-          <motion.button
+          <button
             key={id}
             className={`
-                    ${getButtonStyles(id)} text-md w-full
-                     border-slate-300 px-4 py-3 uppercase transition-all
-                      duration-200 hover:brightness-90 md:text-lg lg:text-xl`}
+										${getButtonStyles(id)} text-md w-full
+										 border-slate-300 px-4 py-3 uppercase transition-all
+											duration-200 hover:brightness-90 md:text-lg lg:text-xl`}
             onClick={() => handleDayClick(id)}
           >
             {`${name} - ${date}`}
-          </motion.button>
+          </button>
         ))}
       </div>
       <div
-        className={`min-h-48 bg-section-card py-3 ${
+        className={`grid min-h-48 w-full bg-section-card py-0 md:py-3 ${
           getActiveDay()?.events.length === 4
-            ? "grid w-full lg:grid-cols-4"
-            : "grid w-full lg:grid-cols-2"
+            ? "lg:grid-cols-4"
+            : "lg:grid-cols-2"
         }`}
       >
         {getActiveDay()?.events.map((event, index) => (
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
+            initial={{
+              opacity: isReducedMotion ? 1 : 0,
+              x: isReducedMotion ? 0 : 100
+            }}
             animate={{ opacity: 1, x: 0 }}
             key={event.description}
             className={`px-4 py-6 md:py-8 ${
