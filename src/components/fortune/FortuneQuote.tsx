@@ -70,7 +70,14 @@ const FortuneQuote: React.FC = () => {
 
   function handleIntervalChange() {
     setQuoteRefreshRate(currentQuoteInterval);
-    toast("Settings saved successfully!");
+    toast.success("Settings saved successfully!", {
+      duration: 2500,
+      description: `Quote refresh rate set to ${currentQuoteInterval} minutes`
+    });
+  }
+
+  function handleIntervalCancel() {
+    setCurrentQuoteInterval(quoteRefreshRate);
   }
 
   return (
@@ -110,7 +117,12 @@ const FortuneQuote: React.FC = () => {
         </div>
       )}
 
-      <Drawer>
+      <Drawer
+        onOpenChange={() =>
+          currentQuoteInterval !== quoteRefreshRate &&
+          setCurrentQuoteInterval(quoteRefreshRate)
+        }
+      >
         <DrawerTrigger className="fixed bottom-6 right-6">
           <SettingsIcon className="size-6 md:size-8" />
         </DrawerTrigger>
@@ -144,7 +156,11 @@ const FortuneQuote: React.FC = () => {
               </Button>
             </DrawerClose>
             <DrawerClose>
-              <Button className="w-40" variant="outline">
+              <Button
+                onClick={handleIntervalCancel}
+                className="w-40"
+                variant="outline"
+              >
                 Cancel
               </Button>
             </DrawerClose>
