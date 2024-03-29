@@ -5,5 +5,11 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), icon()],
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false
+    }),
+    icon()
+  ]
 });
