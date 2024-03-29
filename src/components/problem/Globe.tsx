@@ -1,10 +1,6 @@
-import { config } from "@/config";
 import { World } from "@/lib/components/ui/globe";
 
 const Globe: React.FC = () => {
-  const theme = localStorage.getItem(config.localStorage.theme);
-  const isDark = theme === "dark";
-
   const globeConfig = {
     pointSize: 4,
     globeColor: "#213479",

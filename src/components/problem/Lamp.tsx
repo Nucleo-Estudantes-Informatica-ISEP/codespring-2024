@@ -13,7 +13,7 @@ const problem: React.FC = () => {
           duration: 0.8,
           ease: "easeInOut"
         }}
-        className="bg-gradient-to-br from-slate-500 to-slate-800 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent dark:from-slate-300 dark:to-slate-500 md:text-7xl"
+        className="bg-gradient-to-br from-slate-500 to-slate-800 bg-clip-text py-4 text-center text-5xl font-medium tracking-tight text-transparent dark:from-slate-300 dark:to-slate-500 md:text-7xl"
       >
         Saúde & <br /> bem-estar
       </motion.h1>

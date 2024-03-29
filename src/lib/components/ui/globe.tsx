@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useRef, useState } from "react";
 import { OrbitControls } from "@react-three/drei";
 import {
