@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { SettingsIcon } from "lucide-react";
 import { toast } from "sonner";
@@ -47,6 +47,8 @@ const FortuneQuote: React.FC = () => {
     DEFAULT_REFRESH_INTERVAL_MINUTES
   );
 
+  const intervalRef = useRef<NodeJS.Timeout>();
+
   useEffect(() => {
     const fetchQuote = async () => {
       const res = await fetch(
@@ -61,12 +63,13 @@ const FortuneQuote: React.FC = () => {
       setError(null);
     };
 
-    fetchQuote();
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    else fetchQuote();
 
-    const interval = setInterval(fetchQuote, quoteRefreshRate * 60 * 1000);
+    intervalRef.current = setInterval(fetchQuote, quoteRefreshRate * 60 * 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(intervalRef.current);
+  }, [quoteRefreshRate]);
 
   function handleIntervalChange() {
     setQuoteRefreshRate(currentQuoteInterval);
