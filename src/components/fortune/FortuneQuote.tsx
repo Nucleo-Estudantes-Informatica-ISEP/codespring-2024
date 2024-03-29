@@ -70,9 +70,9 @@ const FortuneQuote: React.FC = () => {
 
   function handleIntervalChange() {
     setQuoteRefreshRate(currentQuoteInterval);
-    toast.success("Settings saved successfully!", {
+    toast.success("Definições atualizadas com sucesso!", {
       duration: 2500,
-      description: `Quote refresh rate set to ${currentQuoteInterval} minutes`
+      description: `Refresh rate da citação atualizado para ${currentQuoteInterval} minutos`
     });
   }
 
@@ -128,9 +128,9 @@ const FortuneQuote: React.FC = () => {
         </DrawerTrigger>
         <DrawerContent className="p-4 md:p-8">
           <DrawerHeader>
-            <DrawerTitle>Fortune Settings</DrawerTitle>
+            <DrawerTitle>Definições do Fortune</DrawerTitle>
             <DrawerDescription>
-              Tweak the settings for your fortune quote
+              Altera a frequência de atualização da citação
             </DrawerDescription>
           </DrawerHeader>
 
@@ -152,7 +152,7 @@ const FortuneQuote: React.FC = () => {
           <DrawerFooter className="items-center justify-center gap-x-8 md:flex-row">
             <DrawerClose>
               <Button onClick={handleIntervalChange} className="w-40">
-                Save
+                Salvar
               </Button>
             </DrawerClose>
             <DrawerClose>
@@ -161,7 +161,7 @@ const FortuneQuote: React.FC = () => {
                 className="w-40"
                 variant="outline"
               >
-                Cancel
+                Cancelar
               </Button>
             </DrawerClose>
           </DrawerFooter>
