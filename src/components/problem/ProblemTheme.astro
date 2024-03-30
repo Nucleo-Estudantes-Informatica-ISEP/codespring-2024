@@ -1,6 +1,7 @@
 ---
 import Lamp from "./Lamp";
-import ProblemStats from "./ProblemStats";
+import NewsCarrousel from "./NewsCarrousel";
+import PersonProblemStats from "./PersonProblemStats";
 ---
 
 <section class="min-h-[80vh]">
@@ -8,5 +9,9 @@ import ProblemStats from "./ProblemStats";
 </section>
 
 <section class="min-h-[80vh]">
-  <ProblemStats client:only />
+  <PersonProblemStats client:only />
+</section>
+
+<section class="min-h-[80vh]">
+  <NewsCarrousel client:only />
 </section>

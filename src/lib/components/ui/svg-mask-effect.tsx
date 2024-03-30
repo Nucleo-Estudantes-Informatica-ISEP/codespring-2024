@@ -7,7 +7,7 @@ export const MaskContainer = ({
   children,
   revealText,
   size = 10,
-  revealSize = 600,
+  revealSize = 500,
   className
 }: {
   children?: string | React.ReactNode;
@@ -46,7 +46,7 @@ export const MaskContainer = ({
       }}
     >
       <motion.div
-        className="bg-grid-white/[0.2] absolute flex h-full w-full items-center justify-center bg-black text-6xl text-white [mask-image:url(/svg/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px]"
+        className="bg-grid-white/[0.2] absolute flex h-full w-full items-center justify-center bg-black/30 text-6xl text-white [mask-image:url(/svg/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px]"
         animate={{
           WebkitMaskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
@@ -55,7 +55,7 @@ export const MaskContainer = ({
         }}
         transition={{ type: "tween", ease: "backOut", duration: 0.1 }}
       >
-        <div className="absolute inset-0 z-0 h-full w-full bg-black opacity-50" />
+        <div className="absolute inset-0 z-0 h-full w-full bg-black/30 opacity-50" />
         <div
           onMouseEnter={() => {
             setIsHovered(true);
