@@ -1,16 +1,12 @@
 
 import juriCriteria from "../../data/juriCriteria.json";
-import { Target } from 'lucide-react';
-import { MessageSquareText } from 'lucide-react';
-import { Award } from 'lucide-react';
-import { Check } from 'lucide-react';
-import { Rocket } from 'lucide-react';
+import { Target, Atom, MessageSquareText, Rocket, Lightbulb, Sparkle } from 'lucide-react';
 
 const iconMap: { [key: string]: any } = {
   target: Target,
   message: MessageSquareText,
-  award: Award,
-  check: Check,
+  lightbulb: Lightbulb,
+  atom: Atom,
   rocket: Rocket,
 };
 

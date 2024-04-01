@@ -1,27 +1,27 @@
 [
     {
-      "description": "Impacto e relevância",
-      "value": 25,
+      "description": "Relação com o tema",
+      "value": 30,
       "icon": "target"
     },
     {
-      "description": "Apresentação e pitch",
+      "description": "Originalidade",
+      "value": 22.5,
+      "icon": "lightbulb"
+    },
+    {
+      "description": "Pitch",
       "value": 15,
       "icon": "message"
     },
     {
-      "description": "Potencial de escalabilidade e sustentabilidade",
+      "description": "Funcionalidade",
+      "value": 17.5,
+      "icon": "atom"
+    },
+    {
+      "description": "UX (Experiência do utilizador / Usabilidade)",
       "value": 10,
-      "icon": "award"
-    },
-    {
-      "description": "Relação com o tema",
-      "value": 20,
-      "icon": "check"
-    },
-    {
-      "description": "Complexidade",
-      "value": 30,
       "icon": "rocket"
     }
   ]
