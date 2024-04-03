@@ -23,7 +23,7 @@ export const BackgroundGradient = ({
     }
   };
   return (
-    <div className={cn("group relative p-10", containerClassName)}>
+    <div className={cn("group relative p-5 md:p-9", containerClassName)}>
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
