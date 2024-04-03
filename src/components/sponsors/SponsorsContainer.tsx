@@ -22,8 +22,8 @@ function SponsorsContainer() {
             <SponsorCard sponsor={sponsor} key={index} />
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className='block md:hidden' />
+        <CarouselNext className='block md:hidden' />
       </Carousel>
     </div>
 
