@@ -12,9 +12,12 @@ import Schedule from "@/components/schedule/Schedule.astro";
 import "../styles/globals.css";
 import "../styles/main.css";
 
+import Awards from "@/components/awards/Awards.astro";
 import Stats from "@/components/stats/Stats.astro";
 import Content from "@/layouts/Content.astro";
 import Layout from "@/layouts/Layout.astro";
+
+import Sponsors from "../components/sponsors/Sponsors.astro";
 ---
 
 <Layout title="CodeSpring 2024 | Home">
@@ -32,6 +35,8 @@ import Layout from "@/layouts/Layout.astro";
     <EventObjectives />
     <Info />
     <Rules />
+    <Awards />
+    <Sponsors />
     <Faq />
     <RegisterSection />
   </Content>
