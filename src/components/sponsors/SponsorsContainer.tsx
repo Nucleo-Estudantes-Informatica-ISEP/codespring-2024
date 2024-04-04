@@ -15,7 +15,7 @@ function SponsorsContainer() {
 
   return (
     <div className="flex w-full justify-center">
-      <Carousel className="w-full max-w-72 md:max-w-3xl lg:max-w-5xl">
+      <Carousel className="w-full max-w-80 md:max-w-3xl lg:max-w-6xl">
         <CarouselContent className="-ml-1">
           {sponsors.map((sponsor, index) => (
             <SponsorCard sponsor={sponsor} key={index} />
