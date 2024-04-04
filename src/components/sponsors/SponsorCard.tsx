@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { Card, CardContent } from "@/lib/components/ui/card.tsx";
 import { CarouselItem } from "@/lib/components/ui/carousel.tsx";
 import type { Sponsor } from "@/components/sponsors/SponsorsInfo.ts";
