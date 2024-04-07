@@ -7,7 +7,7 @@ const people = [
     id: 1,
     name: "Paulo Gandra de Sousa",
     designation:
-      "Professor no Departamento de Engenharia Informática do ISEP desde 1996, sendo atualmente Professor Coordenador. Doutorado em Informática pela Universidade do Minho, a sua área de especialização foi em sistemas distribuídos inteligentes para a manufatura. Desde 2012 é Consultor em Engenharia de Software numa empresa multinacional, msg Life Iberia",
+      "Professor no Departamento de Engenharia Informática do ISEP desde 1996, sendo atualmente Professor Coordenador. Doutorado em Informática pela Universidade do Minho, a sua área de especialização foi em sistemas distribuídos inteligentes para a manufatura. Desde 2012 é Consultor em Engenharia de Software numa empresa multinacional, msg Life Iberia.",
     image: "/paulo-gandra.jpeg"
   },
   {

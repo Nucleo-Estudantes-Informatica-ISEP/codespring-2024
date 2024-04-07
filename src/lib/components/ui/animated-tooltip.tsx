@@ -43,7 +43,7 @@ export const AnimatedTooltip = ({
         <div
           className="group relative -mr-4 w-full"
           key={item.name}
-          onMouseEnter={() => setHoveredIndex(item.id)}
+          onClick={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           {hoveredIndex === item.id && (
@@ -64,14 +64,17 @@ export const AnimatedTooltip = ({
                 translateX: translateX,
                 rotate: rotate
               }}
-              className="absolute -bottom-32 z-50 flex flex-col items-center justify-center rounded-md bg-black px-4 py-2 shadow-xl"
+              className="absolute -top-56 z-50 flex flex-col items-center justify-center rounded-md bg-black px-4 py-2 shadow-xl"
             >
               <div className="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent " />
               <div className="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent " />
               <div className="relative z-30 text-xl font-bold text-white">
                 {item.name}
               </div>
-              <div className="text-xs text-white" style={{ width: "300px" }}>
+              <div
+                className="text-[14px] text-white"
+                style={{ width: "300px" }}
+              >
                 {item.designation}
               </div>
             </motion.div>
