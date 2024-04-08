@@ -1,0 +1,19 @@
+---
+interface Props {
+  color?: "accent" | "primary";
+  tilt?: "left" | "right";
+  className?: string;
+}
+
+const { color, tilt, className } = Astro.props as Props;
+---
+
+<span
+  class={`relative after:absolute after:left-1/2 after:top-1/2 after:-z-10 after:box-content after:h-5/6 after:w-[88%] after:-translate-x-[55%] after:-translate-y-1/2 after:rounded-lg ${
+    color === "accent" ? "after:bg-accent" : "after:bg-primary"
+  } ${
+    tilt === "left" ? "after:-rotate-0.5" : "after:rotate-0.5"
+  } after:px-2 ${className}`}
+>
+  <slot />
+</span>

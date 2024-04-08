@@ -8,9 +8,17 @@
     font-family: "Archivo", sans-serif;
     background-color: var(--background);
     color: var(--text);
-    background-image: var(--hero-bg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: var(--bg-image);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position-y: center;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 640px) {
+    body {
+      background-image: var(--bg-image-mobile);
+    }
   }
 
   h1,

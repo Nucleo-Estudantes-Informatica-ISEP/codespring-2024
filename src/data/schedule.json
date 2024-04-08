@@ -1,20 +1,73 @@
 [
-    {
-        "day": "27 março",
-        "hour": "17:00h",
-        "location": "H202 ISEP",
-        "title": "Sessão de abertura"
-    },
-    {
-        "day": "28 março",
-        "hour": "",
-        "location": "Sala Eventos",
-        "title": "Desenvolvimento das soluções"
-    },
-    {
-        "day": "29 março",
-        "hour": "18:00h",
-        "location": "H202 ISEP",
-        "title": "Entrega de prémios"
-    }
+  {
+    "id": 1,
+    "date": "12 abril",
+    "name": "Sexta-Feira",
+    "events": [
+      {
+        "startTime": "17:00h",
+        "description": "sessão de abertura",
+        "location": "B107"
+      },
+      {
+        "startTime": "18:00h",
+        "description": "revelação do tema",
+        "location": "B107"
+      },
+      {
+        "startTime": "19:00h",
+        "description": "jantar convívio",
+        "location": "?"
+      },
+      {
+        "startTime": "20:00h",
+        "description": "início desenvolvimento",
+        "location": "B107-B109"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "13 abril",
+    "name": "Sábado",
+    "events": [
+      {
+        "startTime": "13:00h",
+        "description": "almoço",
+        "location": "?"
+      },
+      {
+        "startTime": "20:00h",
+        "description": "jantar",
+        "location": "?"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "14 abril",
+    "name": "Domingo",
+    "events": [
+      {
+        "startTime": "13:00h",
+        "description": "almoço",
+        "location": "?"
+      },
+      {
+        "startTime": "16:00h",
+        "description": "submissão dos projetos",
+        "location": "B107"
+      },
+      {
+        "startTime": "16:30h",
+        "description": "pitch aos juris",
+        "location": "B103"
+      },
+      {
+        "startTime": "18:30h",
+        "description": "entrega dos prémios",
+        "location": "B103"
+      }
+    ]
+  }
 ]

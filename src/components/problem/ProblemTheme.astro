@@ -1,7 +1,17 @@
-<main class="min-h-[100vh]">
-  <div class="flex h-[68vh] w-full flex-col items-center justify-center">
-    <div class="grid w-full items-center justify-items-center md:w-fit">
-      <h2 class="text-6xl leading-none md:text-[80px]">Saúde</h2>
-    </div>
-  </div>
-</main>
+---
+import Lamp from "./Lamp";
+import NewsCarrousel from "./NewsCarrousel";
+import PersonProblemStats from "./PersonProblemStats";
+---
+
+<section class="min-h-[80vh]">
+  <Lamp client:only="react" />
+</section>
+
+<section class="min-h-[40vh]">
+  <PersonProblemStats client:only="react" />
+</section>
+
+<section>
+  <NewsCarrousel client:only="react" />
+</section>

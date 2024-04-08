@@ -1,10 +1,42 @@
 [
   {
-    "question": "Question 1 of 5",
-    "answer": "Lorem ipsum pellentesque cursus litora mattis sed egestas, praesent risus integer vestibulum donec inceptos, varius sodales convallis primis commodo amet. Blandit condimentum lacus inceptos est duis diam felis sagittis, tristique ultricies accumsan sapien nisi neque hac rutrum, maecenas euismod nulla massa vestibulum primis netus. Etiam tristique ad non elit dictumst justo consequat ac, purus in mi quis laoreet aenean magna sagittis hac, venenatis mauris aptent ante conubia accumsan egestas."
+    "question": "Quem pode participar no evento?",
+    "answer": "Qualquer pessoa participar, independentemente da idade ou universidade, estudante ou não estudante. Sendo um evento destinado a informáticos e programadores, todos são bem-vindos."
   },
   {
-    "question": "Question 2 of 5",
-    "answer": "Answer 2"
+    "question": "A participação no evento tem algum custo associado?",
+    "answer": "Não. A participação é completamente gratuita."
+  },
+  {
+    "question": "Tenho que estar presente durante todo o evento?",
+    "answer": "Não. Todos os participantes tem liberdade de sair do local do evento a qualquer momento."
+  },
+  {
+    "question": "Existe local para dormir?",
+    "answer": "Sim. Existe uma sala destinada para os participantes poderem descansar. Deves trazer o material que achares necessário para esse efeito (colchão, almofada, etc.)."
+  },
+  {
+    "question": "Vão existir outras atividades no decorrer do evento?",
+    "answer": "Sim, Irão existir outras atividades, opcionais, das quais os participantes poderão participar."
+  },
+  {
+    "question": "Quais são os critérios que vão ser usados pelos júris para avaliar os projetos?",
+    "answer": "À semelhança do tema, os critérios de avaliação dos projetos serão anunciados no primeiro dia do evento, na sessão de abertura."
+  },
+  {
+    "question": "O que vai acontecer na sessão de abertura?",
+    "answer": "Na sessão de abertura, os participantes serão informados do tema do projeto a ser desenvolvido, os critérios que irão ser tomados para proceder à avaliação dos projetos, e o horário completo do evento, com todas as atividades extra e opcionais. "
+  },
+  {
+    "question": "O que vai acontecer na sessão de encerramento?",
+    "answer": "Na sessão de encerramento, os projetos serão apresentados e avaliados pelos júris. Serão anunciados os vencedores e entregues os prémios."
+  },
+  {
+    "question": "Todos os membros devem estar presentes na sessão de abertura?",
+    "answer": "Não. A presença na sessão de abertura é opcional, mas é recomendada."
+  },
+  {
+    "question": "Quais serão os prémios?",
+    "answer": "Podes contar com mais de 1000🪙 em prémios! A distribuição será anunciada em breve, fica atento."
   }
 ]

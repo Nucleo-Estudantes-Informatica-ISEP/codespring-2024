@@ -55,16 +55,16 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
-        sectionCard: {
+        "section-card": {
           DEFAULT: "var(--section-card)",
           foreground: "hsl(var(--section-card-foreground))"
         },
-        scheduleDay: {
+        "schedule-day": {
           DEFAULT: "var(--schedule-day)",
           foreground: "hsl(var(--schedule-day-foreground))"
         },
         criteriaValue: {
-          DEFAULT:  "var(--criteria-value)",
+          DEFAULT: "var(--criteria-value)",
           foreground: "hsl(var(--schedule-day-foreground))"
         },
       },
@@ -72,6 +72,12 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)"
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "spotlight": "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         "accordion-down": {
@@ -92,22 +98,22 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "spotlight": "spotlight 2s ease .75s 1 forwards",
-      },
-      backgroundImage: {
-        hero: "var(--hero-bg)"
-      },
-      fontFamily: {
-        sans: ["Roboto", "Arial", "sans-serif"],
-        poppins: ["Poppins", "Arial", "sans-serif"],
-        archivo: ["Archivo", "Arial", "sans-serif"]
-      }
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))"
+          }
+        }
+    },
+    backgroundImage: {
+      hero: "var(--hero-bg)"
+    },
+    fontFamily: {
+      sans: ["Roboto", "Arial", "sans-serif"],
+      poppins: ["Poppins", "Arial", "sans-serif"],
+      archivo: ["Archivo", "Arial", "sans-serif"]
     }
-  },
+  }
+},
   plugins: [require("tailwindcss-animate")]
 };
 

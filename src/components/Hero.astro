@@ -2,15 +2,17 @@
 import Navbar from "./navbar/Navbar.astro";
 ---
 
-<main class="min-h-[100vh]">
+<main class="min-h-screen">
   <Navbar />
 
   <div
     id="hero"
-    class="flex h-[68vh] w-full flex-col items-center justify-center"
+    class="flex h-[86vh] w-full flex-col items-center justify-center"
   >
-    <div class="grid w-full items-center justify-items-center md:w-fit">
-      <h1 class="col-span-2 text-[62px] leading-none">CodeSpring</h1>
+    <div
+      class="grid w-full items-center justify-items-center md:w-fit md:justify-items-start"
+    >
+      <h1 class="col-span-2 text-5xl leading-none md:text-7xl">CodeSpring</h1>
       <p class="rounded-lg bg-container px-4 py-2 text-center text-3xl">
         12-14 abril
       </p>
@@ -24,14 +26,18 @@ import Navbar from "./navbar/Navbar.astro";
       <a
         class="flex w-3/4 items-center justify-center rounded-lg bg-primary p-2 text-center text-lg font-bold sm:p-4 md:w-fit md:p-4 md:text-2xl"
         href="https://docs.google.com/forms/d/1WhyoDszdGaPxhM4H4XzXfQY-G6zcf0udLkZUXy3nFY0"
-        >Inscreve-te gratuitamente</a
+        target="_blank"
+        rel="noreferrer"
       >
+        Inscreve-te gratuitamente
+      </a>
       <p
-        class="w-full max-w-[320px] text-center font-archivo font-light leading-5 text-muted md:text-left"
+        class="w-full max-w-[320px] bg-background text-center font-archivo font-light leading-5 text-muted md:text-left"
       >
-        Um evento destinado a todos os interessados em informática e
-        programação.<br />
-        Vem provar as tuas habilidades ao longo de 2 dias intensos.
+        ISEP, 2 dias, no sleep, code and repeat. Uma competição destinada a
+        todos os interessados em informática e programação, na qual a partir de
+        um tema surpresa, irás ter que desenvolver a melhor solução. Are you up
+        for the challenge?
       </p>
     </div>
   </div>

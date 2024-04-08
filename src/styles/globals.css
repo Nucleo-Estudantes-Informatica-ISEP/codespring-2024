@@ -43,13 +43,16 @@
     --background: #e5fcff;
     --primary: #8fb2ff;
     --secondary: #ebf1ff;
-    --accent: #mv;
+    --accent: #8a003c;
     --muted: #3b3b3b;
     --container: #ffffff;
     --hero-bg: url("/svg/hero-light.svg");
     --section-card: #ebf1ff;
     --schedule-day: #a3a3a3;
     --criteria-value: #944769;
+    --bg-image: url("/svg/bg-light.svg");
+    --bg-image-mobile: url("/svg/bg-light-sm.svg");
+    --section-card: #dce0ee;
 
     scroll-behavior: smooth;
   }
@@ -91,7 +94,8 @@
     --accent: #ff73af;
     --muted: #dedede;
     --container: #3b3b3b;
-    --hero-bg: url("/svg/hero-dark.svg");
+    --bg-image: url("/svg/bg-dark.svg");
+    --bg-image-mobile: url("/svg/bg-dark-sm.svg");
     --section-card: #3b3b3b;
     --schedule-day: #000614;
     --criteria-value: #743C54;

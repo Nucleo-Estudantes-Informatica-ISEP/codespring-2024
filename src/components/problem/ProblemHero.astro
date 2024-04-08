@@ -1,20 +1,25 @@
 ---
 import Navbar from "../navbar/Navbar.astro";
-import Highlight from "../problem/Highlight";
+import Globe from "./Globe";
+import Highlight from "./Highlight.astro";
 ---
 
 <main class="min-h-[100vh]">
   <Navbar />
 
-  <div class="flex h-[68vh] w-full flex-col items-center justify-center">
-    <div class="grid w-full items-center justify-items-center md:w-fit">
-      <h2 class="text-3xl leading-none md:text-[34px]">
-        "The only way to do <Highlight color="primary" tilt="left"
-          >great work</Highlight
-        > is to love what you do. <br />
-        <br /> And occasionally <Highlight color="accent" tilt="right">
-          reboot your system.
-        </Highlight>"
+  <div class="relative flex h-[88vh] w-full flex-col justify-center">
+    <div
+      class="relative mx-auto flex aspect-square size-1/2 md:absolute md:right-16 md:h-5/6 md:w-2/5"
+    >
+      <Globe client:only="react" />
+    </div>
+
+    <div class="grid w-full items-center justify-items-center md:w-3/5">
+      <h2 class="text-center text-4xl leading-10 md:text-left md:text-6xl">
+        We are turning <Highlight color="primary" tilt="left">ideas</Highlight> into
+        <br />
+        <Highlight color="accent" tilt="right"> solutions </Highlight> for a better
+        life.
       </h2>
     </div>
   </div>

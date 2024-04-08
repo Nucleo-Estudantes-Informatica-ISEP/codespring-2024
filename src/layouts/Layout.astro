@@ -1,5 +1,5 @@
 ---
-export interface Props {
+interface Props {
   title: string;
 }
 
@@ -11,12 +11,16 @@ const { title } = Astro.props as Props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="icon" href="/favicon.ico" />
+    <link rel="icon" type="icon" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=0.9" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Website oficial da primeira edição do evento CodeSpring 2024 organizado pelo Núcleo de Estudantes de Informática do ISEP (NEI-ISEP)."
+    />
     <title>{title}</title>
   </head>
-  <body class="bg-background font-poppins">
-    <slot />
-  </body>
 </html>
+<body class="bg-background font-poppins">
+  <slot />
+</body>
