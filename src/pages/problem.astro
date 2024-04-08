@@ -1,13 +1,19 @@
 ---
+import JuriCriteria from "../components/juriCriteria/JuriCriteria.astro";
 import ProblemHero from "../components/problem/ProblemHero.astro";
 import ProblemTheme from "../components/problem/ProblemTheme.astro";
 import Layout from "../layouts/Layout.astro";
 
 import "../styles/globals.css";
 import "../styles/main.css";
+
+import Content from "@/layouts/Content.astro";
 ---
 
 <Layout title="CodeSpring 2024 | Problem">
   <ProblemHero />
   <ProblemTheme />
+  <Content>
+    <JuriCriteria />
+  </Content>
 </Layout>
