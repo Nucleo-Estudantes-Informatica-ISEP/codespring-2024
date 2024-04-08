@@ -4,18 +4,17 @@ import Faq from "@/components/faq/Faq.astro";
 import Footer from "@/components/Footer.astro";
 import Hero from "@/components/Hero.astro";
 import Info from "@/components/info/Info.astro";
+import JudgeContainer from "@/components/judge/Judge.astro";
 import Loading from "@/components/loading/Loading";
 import RegisterSection from "@/components/RegisterSection.astro";
 import Rules from "@/components/rules/Rules.astro";
 import Schedule from "@/components/schedule/Schedule.astro";
-
-import "../styles/globals.css";
-import "../styles/main.css";
-
-import JuriContainer from "@/components/juri/Juri.astro";
 import Stats from "@/components/stats/Stats.astro";
 import Content from "@/layouts/Content.astro";
 import Layout from "@/layouts/Layout.astro";
+
+import "../styles/globals.css";
+import "../styles/main.css";
 ---
 
 <Layout title="CodeSpring 2024 | Home">
@@ -35,7 +34,7 @@ import Layout from "@/layouts/Layout.astro";
     <Rules />
     <Faq />
     <RegisterSection />
-    <JuriContainer />
+    <JudgeContainer />
   </Content>
   <Footer />
 </Layout>

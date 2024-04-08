@@ -1,19 +1,10 @@
-"use client";
-
-import React, { useState } from "react";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-  useSpring,
-  useTransform
-} from "framer-motion";
+import { useState } from "react";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 export const AnimatedTooltip = ({
   items
 }: {
   items: {
-    id: number;
     name: string;
     designation: string;
     image: string;
@@ -39,14 +30,15 @@ export const AnimatedTooltip = ({
 
   return (
     <div className="grid grid-cols-2 gap-x-3 gap-y-2 md:flex md:grid-cols-none md:gap-x-0 md:gap-y-4">
-      {items.map((item, idx) => (
+      {items.map((item, index) => (
         <div
           className="group relative -mr-4 w-full"
           key={item.name}
-          onClick={() => setHoveredIndex(item.id)}
+          onClick={() => setHoveredIndex(index)}
+          onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          {hoveredIndex === item.id && (
+          {hoveredIndex === index && (
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.6 }}
               animate={{
