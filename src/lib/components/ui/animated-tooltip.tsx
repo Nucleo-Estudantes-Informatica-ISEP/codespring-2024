@@ -29,7 +29,7 @@ export const AnimatedTooltip = ({
   };
 
   return (
-    <div className="grid grid-cols-2 gap-x-3 gap-y-2 md:flex md:grid-cols-none md:gap-x-0 md:gap-y-4">
+    <div className="grid grid-cols-1 gap-x-3 gap-y-2 md:flex md:grid-cols-none md:gap-x-0 md:gap-y-4">
       {items.map((item, index) => (
         <div
           className="group relative -mr-4 w-full"
@@ -56,7 +56,7 @@ export const AnimatedTooltip = ({
                 translateX: translateX,
                 rotate: rotate
               }}
-              className="absolute -top-56 z-50 flex flex-col items-center justify-center rounded-md bg-black px-4 py-2 shadow-xl"
+              className="absolute -left-24 -top-32 z-50 flex flex-col items-center justify-center rounded-md bg-black px-4 py-2 shadow-xl md:-top-56"
             >
               <div className="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent " />
               <div className="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent " />
@@ -64,7 +64,7 @@ export const AnimatedTooltip = ({
                 {item.name}
               </div>
               <div
-                className="text-[14px] text-white"
+                className="text-xs text-white md:text-[14px]"
                 style={{ width: "300px" }}
               >
                 {item.designation}
@@ -77,7 +77,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
-            className="relative !m-0 h-24 w-24 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30  group-hover:scale-105 md:h-52 md:w-52"
+            className="relative !m-0 h-24 w-24 rounded-full border-2 border-white object-center !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 md:h-52 md:w-52"
           />
         </div>
       ))}
