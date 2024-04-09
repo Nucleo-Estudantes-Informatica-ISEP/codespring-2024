@@ -46,7 +46,9 @@ const ScheduleSection: React.FC = () => {
         className={`grid min-h-48 w-full bg-section-card py-0 md:py-3 ${
           getActiveDay()?.events.length === 4
             ? "lg:grid-cols-4"
-            : "lg:grid-cols-2"
+            : getActiveDay()?.events.length === 3
+              ? "lg:grid-cols-3"
+              : "lg:grid-cols-2"
         }`}
       >
         {getActiveDay()?.events.map((event, index) => (
