@@ -17,7 +17,7 @@
       {
         "startTime": "19:00h",
         "description": "jantar convívio",
-        "location": "AeISEP"
+        "location": "Bar" 
       },
       {
         "startTime": "20:00h",
@@ -34,7 +34,12 @@
       {
         "startTime": "13:00h",
         "description": "almoço",
-        "location": "B103"
+        "location": "Bar AE"
+      },
+      {
+        "startTime": "18:00h",
+        "description": "Paragem Ativa",
+        "location": "P-IPP"
       },
       {
         "startTime": "20:00h",
