@@ -32,7 +32,7 @@ export const AnimatedTooltip = ({
     <div className="grid grid-cols-1 gap-x-3 gap-y-2 md:flex md:grid-cols-none md:gap-x-0 md:gap-y-4">
       {items.map((item, index) => (
         <div
-          className="group relative -mr-4 w-full"
+          className="group relative w-full md:-mr-4"
           key={item.name}
           onClick={() => setHoveredIndex(index)}
           onMouseEnter={() => setHoveredIndex(index)}
