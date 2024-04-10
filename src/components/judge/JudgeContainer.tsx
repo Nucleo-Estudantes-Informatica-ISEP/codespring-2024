@@ -3,7 +3,7 @@ import judges from "@/data/judges.json";
 
 export default function JuriContainer() {
   return (
-    <div className="mb-10 flex w-full items-center justify-center">
+    <div className="flex w-full items-center justify-center md:mb-10">
       <AnimatedTooltip items={judges} />
     </div>
   );

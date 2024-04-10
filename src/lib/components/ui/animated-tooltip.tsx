@@ -29,7 +29,7 @@ export const AnimatedTooltip = ({
   };
 
   return (
-    <div className="grid grid-cols-1 gap-x-3 gap-y-2 md:flex md:grid-cols-none md:gap-x-0 md:gap-y-4">
+    <div className="mt-8 grid grid-cols-2 gap-8 md:flex md:grid-cols-none md:gap-x-0 md:gap-y-4">
       {items.map((item, index) => (
         <div
           className="group relative w-full md:-mr-4"
@@ -56,7 +56,7 @@ export const AnimatedTooltip = ({
                 translateX: translateX,
                 rotate: rotate
               }}
-              className="absolute -left-24 -top-32 z-50 flex flex-col items-center justify-center rounded-md bg-black px-4 py-2 shadow-xl md:-top-56"
+              className={`${index % 2 ? "max-md:-left-28" : "max-md:-left-12"} absolute bottom-24 z-50 flex flex-col items-center justify-center rounded-md bg-black px-4 py-2 shadow-xl md:-left-12 md:bottom-48`}
             >
               <div className="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent " />
               <div className="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent " />
@@ -64,8 +64,8 @@ export const AnimatedTooltip = ({
                 {item.name}
               </div>
               <div
-                className="text-xs text-white md:text-[14px]"
-                style={{ width: "300px" }}
+                className="text-left text-xs text-white md:text-[16px]"
+                style={{ width: "250px" }}
               >
                 {item.designation}
               </div>
@@ -77,7 +77,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
-            className="relative !m-0 h-24 w-24 rounded-full border-2 border-white object-center !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 md:h-52 md:w-52"
+            className="relative !m-0 size-32 rounded-full border-2 border-white object-center !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 md:h-52 md:w-52"
           />
         </div>
       ))}
