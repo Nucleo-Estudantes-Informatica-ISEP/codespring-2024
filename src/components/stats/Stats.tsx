@@ -21,7 +21,7 @@ const StatsContainer: React.FC = () => {
             <span className="text-6xl font-bold text-accent md:text-7xl lg:text-8xl">
               {stat.title}
             </span>
-            <span className="mt-2 text-xl md:text-2xl lg:text-3xl">
+            <span className="mt-2 text-xl md:text-2xl lg:text-3xl font-semibold">
               {stat.description}
             </span>
           </motion.div>

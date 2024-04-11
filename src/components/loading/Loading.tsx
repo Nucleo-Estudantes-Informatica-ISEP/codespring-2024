@@ -30,7 +30,7 @@ const Loading = ({ title, year, month, day }: LoadingParams) => {
   });
 
   const startCountDown = useCallback(() => {
-    const countDownDate = new Date(year, month - 1, day, 0, 0, 0);
+    const countDownDate = new Date(year, month - 1, day, 18, 0, 0);
     setInterval(() => {
       setCountDownTime(getTimeDifference(countDownDate.getTime()));
     }, 1000);
