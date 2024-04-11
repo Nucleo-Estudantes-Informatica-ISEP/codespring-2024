@@ -1,36 +1,63 @@
+import { motion } from "framer-motion";
+import {
+  Atom,
+  Lightbulb,
+  MessageSquareText,
+  Rocket,
+  Target,
+  type LucideIcon
+} from "lucide-react";
 
 import juriCriteria from "../../data/juriCriteria.json";
-import { Target, Atom, MessageSquareText, Rocket, Lightbulb, Sparkle } from 'lucide-react';
 
-const iconMap: { [key: string]: any } = {
+const iconMap: { [key: string]: LucideIcon } = {
   target: Target,
   message: MessageSquareText,
   lightbulb: Lightbulb,
   atom: Atom,
-  rocket: Rocket,
+  rocket: Rocket
 };
 
 const JuriCriteriaContainer: React.FC = () => {
   return (
-    <div className="w-full flex justify-center">
-      <div className="flex flex-wrap justify-center w-full max-w-8xl">
+    <div className="flex w-full justify-center">
+      <div className="max-w-8xl flex w-full flex-wrap justify-center gap-4">
         {juriCriteria.map((criteria, index) => {
-          const IconComponent = iconMap[criteria.icon]; 
-          if (!IconComponent) return null; 
+          const IconComponent = iconMap[criteria.icon];
+          if (!IconComponent) return null;
           return (
-            <div key={index} className="w-52 h-[375px] mx-1 mb-4">
-              <div className="h-full flex flex-col justify-between bg-background rounded-xl overflow-hidden shadow-xl dark:shadow-none border-2 border-b-0 dark:border-2">
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: 50 * index
+              }}
+              animate={{
+                opacity: 1,
+                x: 0
+              }}
+              transition={{
+                delay: (index - 1) * 0.1
+              }}
+              viewport={{
+                once: true
+              }}
+              key={criteria.description}
+              className="h-[375px] w-52 transition-transform duration-300 ease-in-out hover:scale-105"
+            >
+              <div className="flex h-full flex-col justify-between overflow-hidden rounded-xl border-2 border-b-0 bg-background shadow-xl dark:border-2 dark:shadow-none">
                 <div className="flex justify-center pt-12">
-                  <IconComponent className="w-24 h-24 mx-auto" />
+                  <IconComponent className="mx-auto size-20" />
                 </div>
                 <div className="flex justify-center px-4 py-2">
-                  <p className="mt-2 font-bold text-lg text-center">{criteria.description}</p>
+                  <p className="mt-2 text-center text-lg font-bold md:text-2xl">
+                    {criteria.description}
+                  </p>
                 </div>
-                <div className="bg-criteriaValue px-4 py-3">
-                  <p className="text-white font-semibold text-lg text-center">{criteria.value}%</p>
-                </div>
+                <p className="bg-criteria-value p-3 text-center text-lg font-black text-white md:text-xl">
+                  {criteria.value}%
+                </p>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

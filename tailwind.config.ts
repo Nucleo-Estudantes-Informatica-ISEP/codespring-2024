@@ -63,10 +63,10 @@ const config: Config = {
           DEFAULT: "var(--schedule-day)",
           foreground: "hsl(var(--schedule-day-foreground))"
         },
-        criteriaValue: {
+        "criteria-value": {
           DEFAULT: "var(--criteria-value)",
           foreground: "hsl(var(--schedule-day-foreground))"
-        },
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -76,8 +76,9 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        "spotlight": "spotlight 2s ease .75s 1 forwards",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        spotlight: "spotlight 2s ease .75s 1 forwards"
       },
       keyframes: {
         "accordion-down": {
@@ -88,32 +89,32 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" }
         },
-        "spotlight": {
+        spotlight: {
           "0%": {
             opacity: "0",
-            transform: "translate(-72%, -62%) scale(0.5)",
+            transform: "translate(-72%, -62%) scale(0.5)"
           },
           "100%": {
             opacity: "1",
-            transform: "translate(-50%,-40%) scale(1)",
-          },
+            transform: "translate(-50%,-40%) scale(1)"
+          }
         },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))"
           }
         }
-    },
-    backgroundImage: {
-      hero: "var(--hero-bg)"
-    },
-    fontFamily: {
-      sans: ["Roboto", "Arial", "sans-serif"],
-      poppins: ["Poppins", "Arial", "sans-serif"],
-      archivo: ["Archivo", "Arial", "sans-serif"]
+      },
+      backgroundImage: {
+        hero: "var(--hero-bg)"
+      },
+      fontFamily: {
+        sans: ["Roboto", "Arial", "sans-serif"],
+        poppins: ["Poppins", "Arial", "sans-serif"],
+        archivo: ["Archivo", "Arial", "sans-serif"]
+      }
     }
-  }
-},
+  },
   plugins: [require("tailwindcss-animate")]
 };
 
