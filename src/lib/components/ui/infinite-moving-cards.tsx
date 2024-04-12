@@ -91,6 +91,9 @@ export const InfiniteMovingCards = ({
             key={item.author}
           >
             <blockquote className="flex h-full w-full flex-col justify-between">
+              <span className="text-xl font-bold  leading-[1.6]">
+                {item.title}
+              </span>
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
@@ -100,9 +103,6 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex w-full items-center justify-between">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-sm font-normal leading-[1.6]">
-                    {item.title}
-                  </span>
                   <span className="text-sm font-bold leading-[1.6]">
                     {item.author}
                   </span>
