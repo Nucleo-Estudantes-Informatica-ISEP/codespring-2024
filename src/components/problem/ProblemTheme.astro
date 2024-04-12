@@ -1,0 +1,17 @@
+---
+import Lamp from "./Lamp";
+import NewsCarrousel from "./NewsCarrousel";
+import PersonProblemStats from "./PersonProblemStats";
+---
+
+<section class="min-h-[40vh]">
+  <Lamp client:only="react" />
+</section>
+
+<section class="min-h-[40vh]">
+  <PersonProblemStats client:only="react" />
+</section>
+
+<section>
+  <NewsCarrousel client:only="react" />
+</section>

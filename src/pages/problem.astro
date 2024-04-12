@@ -1,0 +1,24 @@
+---
+import JuriCriteria from "../components/juriCriteria/JuriCriteria.astro";
+import ProblemHero from "../components/problem/ProblemHero.astro";
+import ProblemTheme from "../components/problem/ProblemTheme.astro";
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/globals.css";
+import "../styles/main.css";
+
+import Content from "@/layouts/Content.astro";
+---
+
+<Layout title="CodeSpring 2024 | Problem">
+  <ProblemHero />
+  <ProblemTheme />
+  <Content>
+    <JuriCriteria />
+    <a
+      class="w-content mx-auto mb-32 flex items-center justify-center gap-x-2 rounded-lg bg-accent p-4 align-middle text-4xl font-semibold opacity-85 shadow-lg"
+      href="/fortune"
+      >💡 <span class="text-2xl">Check some ideas</span>
+    </a>
+  </Content>
+</Layout>

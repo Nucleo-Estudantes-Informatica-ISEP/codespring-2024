@@ -1,0 +1,26 @@
+---
+import Navbar from "../navbar/Navbar.astro";
+import Globe from "./Globe";
+import Highlight from "./Highlight.astro";
+---
+
+<main class="min-h-[90vh]">
+  <Navbar />
+
+  <div class="relative flex h-[88vh] w-full flex-col justify-center">
+    <div
+      class="relative mx-auto flex aspect-square size-1/2 md:absolute md:right-16 md:h-5/6 md:w-2/5"
+    >
+      <Globe client:only="react" />
+    </div>
+
+    <div class="grid w-full items-center justify-items-center md:w-3/5">
+      <h2 class="text-center text-4xl leading-10 md:text-left md:text-6xl">
+        We are turning <Highlight color="primary" tilt="left">ideas</Highlight> into
+        <br />
+        <Highlight color="accent" tilt="right"> solutions </Highlight> for a better
+        life.
+      </h2>
+    </div>
+  </div>
+</main>

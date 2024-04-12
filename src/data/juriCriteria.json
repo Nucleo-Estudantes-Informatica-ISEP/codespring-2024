@@ -1,0 +1,27 @@
+[
+  {
+    "description": "Relação com o tema",
+    "value": 30,
+    "icon": "target"
+  },
+  {
+    "description": "Originalidade",
+    "value": 22.5,
+    "icon": "lightbulb"
+  },
+  {
+    "description": "Pitch",
+    "value": 20,
+    "icon": "message"
+  },
+  {
+    "description": "Funcionalidade",
+    "value": 17.5,
+    "icon": "atom"
+  },
+  {
+    "description": "UX (Experiência do utilizador / Usabilidade)",
+    "value": 10,
+    "icon": "rocket"
+  }
+]
