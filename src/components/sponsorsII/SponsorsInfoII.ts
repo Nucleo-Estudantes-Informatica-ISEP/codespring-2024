@@ -1,6 +1,11 @@
 export const getAllInfo = (): Sponsor[] => {
   return [
     {
+      img: "/logo/isep.png",
+      alt: "ISEP Logo",
+      href: "https://www.isep.pt/"
+    },
+    {
       img: "/logo/aeisep.png",
       alt: "AEIsep Logo",
       href: "https://www.aeisep.pt/"
