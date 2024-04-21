@@ -11,7 +11,7 @@ function SponsorCard(props: SponsorCardProps) {
 
   return (
     <CarouselItem className="flex basis-1/2 select-none items-center justify-center md:basis-1/3">
-      <Card className="rounded-lg border-slate-600 transition-all duration-500 dark:border-white md:hover:rounded-3xl">
+      <Card className="size-44 rounded-lg border-slate-600 transition-all duration-500 dark:border-white md:size-64 md:hover:rounded-3xl">
         <a target="_blank" href={sponsor.href || ""}>
           <CardContent className="flex aspect-square items-center justify-center p-6 md:size-64">
             <img

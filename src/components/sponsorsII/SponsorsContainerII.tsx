@@ -10,7 +10,7 @@ import {
   type Sponsor
 } from "@/components/sponsorsII/SponsorsInfoII";
 
-function ThanksContainer() {
+function SponsorsContainerII() {
   const sponsors: Sponsor[] = getAllInfo();
 
   return (
@@ -32,4 +32,4 @@ function ThanksContainer() {
   );
 }
 
-export default ThanksContainer;
+export default SponsorsContainerII;
